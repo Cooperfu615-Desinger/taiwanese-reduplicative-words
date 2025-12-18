@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import { CentralCard } from './components/CentralCard';
+import { AmbientBackground } from './components/AmbientBackground';
 import wordsData from './data/data.json';
 
 function App() {
@@ -28,7 +29,6 @@ function App() {
         console.log('Share cancelled');
       }
     } else {
-      // Fallback: copy to clipboard
       navigator.clipboard.writeText(
         `${currentWord.hanzi} (${currentWord.tailo}) - ${currentWord.meaning}\n${currentWord.sentence}`
       );
@@ -37,32 +37,32 @@ function App() {
   }, [currentWord]);
 
   return (
-    <div
-      className="min-h-screen w-full bg-cream font-sans flex flex-col items-center justify-center px-4 py-8"
-      style={{
-        backgroundImage: `radial-gradient(circle, rgba(0, 0, 0, 0.09) 4px, transparent 4px)`,
-        backgroundSize: '10px 10px',
-      }}
-    >
-      {/* Central Card */}
-      <CentralCard
-        word={currentWord}
-        onShuffle={handleShuffle}
-        onShare={handleShare}
-      />
+    <>
+      {/* Animated Mesh Gradient Background */}
+      <AmbientBackground />
 
-      {/* Title below card */}
-      <h1 className="mt-8 text-text text-lg font-medium tracking-[0.3em]">
-        台語疊字聲韻
-      </h1>
+      {/* Main Content */}
+      <div className="min-h-screen w-full font-sans relative flex flex-col items-center justify-center px-4 py-8">
+        {/* Central Card */}
+        <CentralCard
+          word={currentWord}
+          onShuffle={handleShuffle}
+          onShare={handleShare}
+        />
 
-      {/* Copyright at bottom */}
-      <footer className="fixed bottom-4 left-0 right-0 text-center">
-        <span className="text-muted/50 text-[10px] tracking-wider">
-          CREATED BY VIBE QUIRK LABS
-        </span>
-      </footer>
-    </div>
+        {/* Title below card */}
+        <h1 className="mt-8 text-text text-lg font-semibold tracking-[0.3em]">
+          台語疊字聲韻
+        </h1>
+
+        {/* Copyright at bottom */}
+        <footer className="fixed bottom-4 left-0 right-0 text-center">
+          <span className="text-muted/50 text-[10px] tracking-wider">
+            CREATED BY VIBE QUIRK LABS
+          </span>
+        </footer>
+      </div>
+    </>
   );
 }
 
