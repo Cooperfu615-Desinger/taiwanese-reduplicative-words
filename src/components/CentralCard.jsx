@@ -1,22 +1,11 @@
 export function CentralCard({ word }) {
-    // SVG noise texture as data URI
-    const noiseTexture = `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`;
-
     return (
         <div
-            className="w-full max-w-[360px] h-[600px] rounded-3xl p-6 flex flex-col relative overflow-hidden"
-            style={{ backgroundColor: word.themeColor }}
+            className="w-full max-w-[360px] h-[600px] rounded-3xl p-6 flex flex-col relative overflow-hidden backdrop-blur-md"
+            style={{
+                backgroundColor: `${word.themeColor}CC`,
+            }}
         >
-            {/* Noise Texture Overlay */}
-            <div
-                className="absolute inset-0 rounded-3xl pointer-events-none opacity-20 mix-blend-overlay"
-                style={{
-                    backgroundImage: noiseTexture,
-                    backgroundRepeat: 'repeat',
-                }}
-                aria-hidden="true"
-            />
-
             {/* Top Left - Category & Type Labels */}
             <div className="flex flex-col gap-1 relative z-10">
                 <span className="text-white/70 text-sm font-medium tracking-wider">
