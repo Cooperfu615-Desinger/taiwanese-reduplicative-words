@@ -16,71 +16,52 @@ function App() {
     setCurrentWord(wordsData.words[newIndex]);
   }, [currentWord.id]);
 
-  // Get current date
-  const today = new Date();
-  const day = today.getDate();
-  const month = today.getMonth() + 1;
+  const handleShare = useCallback(async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: '台語疊字聲韻',
+          text: `${currentWord.hanzi} (${currentWord.tailo}) - ${currentWord.meaning}`,
+          url: window.location.href,
+        });
+      } catch (err) {
+        console.log('Share cancelled');
+      }
+    } else {
+      // Fallback: copy to clipboard
+      navigator.clipboard.writeText(
+        `${currentWord.hanzi} (${currentWord.tailo}) - ${currentWord.meaning}\n${currentWord.sentence}`
+      );
+      alert('已複製到剪貼簿！');
+    }
+  }, [currentWord]);
 
   return (
     <div
-      className="min-h-screen w-full bg-cream font-sans relative flex flex-col items-center justify-center px-4 py-8"
+      className="min-h-screen w-full bg-cream font-sans flex flex-col items-center justify-center px-4 py-8"
       style={{
         backgroundImage: `radial-gradient(circle, rgba(0, 0, 0, 0.09) 4px, transparent 4px)`,
         backgroundSize: '10px 10px',
       }}
     >
+      {/* Central Card */}
+      <CentralCard
+        word={currentWord}
+        onShuffle={handleShuffle}
+        onShare={handleShare}
+      />
 
-      {/* Top Right - Date */}
-      <div className="fixed top-6 right-6 md:top-10 md:right-10 text-right z-10">
-        <div className="text-muted text-sm tracking-wider">
-          {month}月
-        </div>
-        <div className="text-muted text-5xl md:text-6xl font-medium">
-          {day}
-        </div>
-        <div className="text-muted text-xs tracking-wider">
-          日
-        </div>
-      </div>
+      {/* Title below card */}
+      <h1 className="mt-8 text-text text-lg font-medium tracking-[0.3em]">
+        台語疊字聲韻
+      </h1>
 
-      {/* Bottom Left - Title */}
-      <div className="fixed bottom-6 left-6 md:bottom-10 md:left-10 z-10">
-        <span className="text-muted text-sm tracking-widest">
-          台語疊字聲韻
-        </span>
-      </div>
-
-      {/* Bottom Right - Copyright */}
-      <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-10">
-        <span className="text-muted/60 text-xs tracking-wider">
+      {/* Copyright at bottom */}
+      <footer className="fixed bottom-4 left-0 right-0 text-center">
+        <span className="text-muted/50 text-[10px] tracking-wider">
           CREATED BY VIBE QUIRK LABS
         </span>
-      </div>
-
-      {/* Central Card */}
-      <CentralCard word={currentWord} />
-
-      {/* Shuffle Button - Glassmorphic with Icon */}
-      <button
-        onClick={handleShuffle}
-        className="mt-6 group flex items-center gap-3 px-6 py-3 bg-gray-500/10 backdrop-blur-md border border-gray-400/20 rounded-full text-gray-600 hover:bg-gray-500/20 hover:text-gray-700 transition-all duration-300 hover:scale-105 active:scale-95"
-        aria-label="換一句"
-      >
-        <svg
-          className="w-5 h-5 group-hover:rotate-180 transition-transform duration-500"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-          />
-        </svg>
-        <span className="text-sm font-medium tracking-wider">換一句</span>
-      </button>
+      </footer>
     </div>
   );
 }
