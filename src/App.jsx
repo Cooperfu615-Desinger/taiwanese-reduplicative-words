@@ -22,7 +22,13 @@ function App() {
   const month = today.getMonth() + 1;
 
   return (
-    <div className="min-h-screen w-full bg-cream font-sans relative flex flex-col items-center justify-center px-4 py-8">
+    <div
+      className="min-h-screen w-full bg-cream font-sans relative flex flex-col items-center justify-center px-4 py-8"
+      style={{
+        backgroundImage: `radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px)`,
+        backgroundSize: '20px 20px',
+      }}
+    >
 
       {/* Top Right - Date */}
       <div className="fixed top-6 right-6 md:top-10 md:right-10 text-right z-10">
