@@ -1,22 +1,31 @@
-import { Header } from './components/Header';
-import { SearchBar } from './components/SearchBar';
-import { WordList } from './components/WordList';
-import { useSearch } from './hooks/useSearch';
+import { useState, useCallback } from 'react';
+import { ImmersiveCard } from './components/ImmersiveCard';
+import { ShuffleButton } from './components/ShuffleButton';
 import wordsData from './data/data.json';
 
 function App() {
-  const { query, setQuery, filteredWords } = useSearch(wordsData.words);
+  const [currentWord, setCurrentWord] = useState(() => {
+    const randomIndex = Math.floor(Math.random() * wordsData.words.length);
+    return wordsData.words[randomIndex];
+  });
+
+  const handleShuffle = useCallback(() => {
+    let newIndex;
+    do {
+      newIndex = Math.floor(Math.random() * wordsData.words.length);
+    } while (wordsData.words[newIndex].id === currentWord.id && wordsData.words.length > 1);
+    setCurrentWord(wordsData.words[newIndex]);
+  }, [currentWord.id]);
+
+  // Get current date
+  const today = new Date();
+  const day = today.getDate();
+  const month = today.getMonth() + 1;
 
   return (
-    <div className="min-h-screen bg-zen-light font-serif">
-      <Header />
-      <SearchBar query={query} onQueryChange={setQuery} />
-      <WordList words={filteredWords} />
-
-      {/* Footer */}
-      <footer className="text-center py-8 text-zen-muted/60 text-sm">
-        <p>台語疊字聲韻 © 2024</p>
-      </footer>
+    <div className="relative min-h-screen w-full overflow-hidden">
+      <ImmersiveCard word={currentWord} day={day} month={month} />
+      <ShuffleButton onClick={handleShuffle} />
     </div>
   );
 }

@@ -5,168 +5,240 @@
       "hanzi": "紅記記",
       "tailo": "Âng-kì-kì",
       "type": "ABB",
-      "meaning": "形容非常紅、紅通通的樣子。"
+      "meaning": "形容非常紅、紅通通的樣子。",
+      "sentence": "伊受著驚，面紅記記。",
+      "themeColor": "#7B3F38",
+      "category": "視覺"
     },
     {
       "id": 2,
       "hanzi": "白雪雪",
       "tailo": "Pe̍h-seh-seh",
       "type": "ABB",
-      "meaning": "形容非常白、雪白的樣子。"
+      "meaning": "形容非常白、雪白的樣子。",
+      "sentence": "阿媽的頭毛白雪雪。",
+      "themeColor": "#4A5568",
+      "category": "視覺"
     },
     {
       "id": 3,
       "hanzi": "烏嚕嚕",
       "tailo": "Oo-lu-lu",
       "type": "ABB",
-      "meaning": "形容非常黑、烏黑的樣子。"
+      "meaning": "形容非常黑、烏黑的樣子。",
+      "sentence": "暗時天頂烏嚕嚕，欲落雨矣。",
+      "themeColor": "#1A202C",
+      "category": "視覺"
     },
     {
       "id": 4,
       "hanzi": "黃澄澄",
       "tailo": "N̂g-tîn-tîn",
       "type": "ABB",
-      "meaning": "形容金黃色、閃亮發黃的樣子。"
+      "meaning": "形容金黃色、閃亮發黃的樣子。",
+      "sentence": "秋天的稻仔黃澄澄，真媠。",
+      "themeColor": "#8B6914",
+      "category": "視覺"
     },
     {
       "id": 5,
       "hanzi": "青翠翠",
       "tailo": "Tshenn-tshuì-tshuì",
       "type": "ABB",
-      "meaning": "形容非常翠綠、青綠的樣子。"
+      "meaning": "形容非常翠綠、青綠的樣子。",
+      "sentence": "山頂的樹仔青翠翠。",
+      "themeColor": "#2F5C56",
+      "category": "視覺"
     },
     {
       "id": 6,
       "hanzi": "甜蜜蜜",
       "tailo": "Tinn-bi̍t-bi̍t",
       "type": "ABB",
-      "meaning": "形容非常甜、甜膩的樣子。"
+      "meaning": "形容非常甜、甜膩的樣子。",
+      "sentence": "這粒芒果甜蜜蜜，真好食。",
+      "themeColor": "#9C4221",
+      "category": "味覺"
     },
     {
       "id": 7,
       "hanzi": "酸溜溜",
       "tailo": "Sng-liu-liu",
       "type": "ABB",
-      "meaning": "形容非常酸的樣子或嫉妒心重。"
+      "meaning": "形容非常酸的樣子或嫉妒心重。",
+      "sentence": "這粒柑仔酸溜溜，食袂落去。",
+      "themeColor": "#5B7553",
+      "category": "味覺"
     },
     {
       "id": 8,
       "hanzi": "冷吱吱",
       "tailo": "Líng-ki-ki",
       "type": "ABB",
-      "meaning": "形容非常冷、冰冷刺骨的樣子。"
+      "meaning": "形容非常冷、冰冷刺骨的樣子。",
+      "sentence": "今仔日風真透，外口冷吱吱。",
+      "themeColor": "#2C3E50",
+      "category": "觸覺"
     },
     {
       "id": 9,
       "hanzi": "燒烙烙",
       "tailo": "Sio-lo̍h-lo̍h",
       "type": "ABB",
-      "meaning": "形容非常燙、滾燙的樣子。"
+      "meaning": "形容非常燙、滾燙的樣子。",
+      "sentence": "這碗湯燒烙烙，細膩燙著。",
+      "themeColor": "#C53030",
+      "category": "觸覺"
     },
     {
       "id": 10,
       "hanzi": "軟糊糊",
       "tailo": "Nńg-kôo-kôo",
       "type": "ABB",
-      "meaning": "形容非常軟爛、軟糊的樣子。"
+      "meaning": "形容非常軟爛、軟糊的樣子。",
+      "sentence": "這塊粿軟糊糊，無好食。",
+      "themeColor": "#744210",
+      "category": "觸覺"
     },
     {
       "id": 11,
       "hanzi": "硬梆梆",
       "tailo": "Ngē-pang-pang",
       "type": "ABB",
-      "meaning": "形容非常硬、堅硬的樣子。"
+      "meaning": "形容非常硬、堅硬的樣子。",
+      "sentence": "這塊餅硬梆梆，咬袂離。",
+      "themeColor": "#553C2E",
+      "category": "觸覺"
     },
     {
       "id": 12,
       "hanzi": "油膩膩",
       "tailo": "Iû-nī-nī",
       "type": "ABB",
-      "meaning": "形容非常油膩、沾滿油的樣子。"
+      "meaning": "形容非常油膩、沾滿油的樣子。",
+      "sentence": "這盤菜油膩膩，食了會膏。",
+      "themeColor": "#5C4033",
+      "category": "觸覺"
     },
     {
       "id": 13,
       "hanzi": "歡歡喜喜",
       "tailo": "Huann-huann-hí-hí",
       "type": "AABB",
-      "meaning": "形容非常開心、喜悅的狀態。"
+      "meaning": "形容非常開心、喜悅的狀態。",
+      "sentence": "過年的時，全家歡歡喜喜。",
+      "themeColor": "#9B2C2C",
+      "category": "情緒"
     },
     {
       "id": 14,
       "hanzi": "平平安安",
       "tailo": "Pênn-pênn-an-an",
       "type": "AABB",
-      "meaning": "形容平安無事、一切順利。"
+      "meaning": "形容平安無事、一切順利。",
+      "sentence": "祝你出門平平安安轉來。",
+      "themeColor": "#2D3748",
+      "category": "情緒"
     },
     {
       "id": 15,
       "hanzi": "大大細細",
       "tailo": "Tuā-tuā-sè-sè",
       "type": "AABB",
-      "meaning": "形容大大小小、老老少少。"
+      "meaning": "形容大大小小、老老少少。",
+      "sentence": "厝內大大細細攏來食飯。",
+      "themeColor": "#3D5A5B",
+      "category": "狀態"
     },
     {
       "id": 16,
       "hanzi": "清清楚楚",
       "tailo": "Tshing-tshing-tshó-tshó",
       "type": "AABB",
-      "meaning": "形容非常清楚明白。"
+      "meaning": "形容非常清楚明白。",
+      "sentence": "我共你講清清楚楚矣。",
+      "themeColor": "#31587A",
+      "category": "狀態"
     },
     {
       "id": 17,
       "hanzi": "慢慢仔",
       "tailo": "Bān-bān-á",
       "type": "AAB",
-      "meaning": "慢慢地、不著急。"
+      "meaning": "慢慢地、不著急。",
+      "sentence": "你慢慢仔行，毋免急。",
+      "themeColor": "#4A5568",
+      "category": "動作"
     },
     {
       "id": 18,
       "hanzi": "好好仔",
       "tailo": "Hó-hó-á",
       "type": "AAB",
-      "meaning": "好好地、仔細地。"
+      "meaning": "好好地、仔細地。",
+      "sentence": "你愛好好仔讀冊。",
+      "themeColor": "#285E61",
+      "category": "動作"
     },
     {
       "id": 19,
       "hanzi": "輕輕仔",
       "tailo": "Khin-khin-á",
       "type": "AAB",
-      "meaning": "輕輕地、小心翼翼。"
+      "meaning": "輕輕地、小心翼翼。",
+      "sentence": "輕輕仔共門關起來。",
+      "themeColor": "#4A5568",
+      "category": "動作"
     },
     {
       "id": 20,
       "hanzi": "圓滾滾",
       "tailo": "Înn-kún-kún",
       "type": "ABB",
-      "meaning": "形容圓圓胖胖、渾圓的樣子。"
+      "meaning": "形容圓圓胖胖、渾圓的樣子。",
+      "sentence": "嬰仔的面圓滾滾，真古錐。",
+      "themeColor": "#6B4C3B",
+      "category": "視覺"
     },
     {
       "id": 21,
       "hanzi": "黑趖趖",
       "tailo": "O͘-sô-sô",
       "type": "ABB",
-      "meaning": "形容非常黑、烏漆抹黑的樣子。"
+      "meaning": "形容非常黑、烏漆抹黑的樣子。",
+      "sentence": "落雨天，天頂黑趖趖。",
+      "themeColor": "#1C1C1C",
+      "category": "視覺"
     },
     {
       "id": 22,
       "hanzi": "冷霜霜",
       "tailo": "Léng-sng-sng",
       "type": "ABB",
-      "meaning": "形容非常冷、冷冰冰的樣子。"
+      "meaning": "形容非常冷、冷冰冰的樣子。",
+      "sentence": "伊的手冷霜霜，緊來烘火。",
+      "themeColor": "#34495E",
+      "category": "觸覺"
     },
     {
       "id": 23,
       "hanzi": "燒滾滾",
       "tailo": "Sio-kún-kún",
       "type": "ABB",
-      "meaning": "形容非常燙、滾燙的樣子。"
+      "meaning": "形容非常燙、滾燙的樣子。",
+      "sentence": "水燒滾滾，會使泡茶矣。",
+      "themeColor": "#B7410E",
+      "category": "觸覺"
     },
     {
       "id": 24,
       "hanzi": "甜粅粅",
       "tailo": "Tiⁿ-bu̍t-bu̍t",
       "type": "ABB",
-      "meaning": "形容非常甜、甜滋滋的樣子。"
+      "meaning": "形容非常甜、甜滋滋的樣子。",
+      "sentence": "這杯蜜茶甜粅粅，真好啉。",
+      "themeColor": "#8D6E63",
+      "category": "味覺"
     }
   ]
 }
