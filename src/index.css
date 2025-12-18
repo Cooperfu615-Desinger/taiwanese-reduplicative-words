@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Zen Style Custom Styles */
+@theme {
+  --font-serif: "Noto Serif TC", serif;
+  --color-zen-ink: #2d3436;
+  --color-zen-light: #f8f9fa;
+  --color-zen-muted: #636e72;
+  --color-zen-accent: #6c5ce7;
+}

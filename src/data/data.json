@@ -1,0 +1,172 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "hanzi": "紅記記",
+      "tailo": "Âng-kì-kì",
+      "type": "ABB",
+      "meaning": "形容非常紅、紅通通的樣子。"
+    },
+    {
+      "id": 2,
+      "hanzi": "白雪雪",
+      "tailo": "Pe̍h-seh-seh",
+      "type": "ABB",
+      "meaning": "形容非常白、雪白的樣子。"
+    },
+    {
+      "id": 3,
+      "hanzi": "烏嚕嚕",
+      "tailo": "Oo-lu-lu",
+      "type": "ABB",
+      "meaning": "形容非常黑、烏黑的樣子。"
+    },
+    {
+      "id": 4,
+      "hanzi": "黃澄澄",
+      "tailo": "N̂g-tîn-tîn",
+      "type": "ABB",
+      "meaning": "形容金黃色、閃亮發黃的樣子。"
+    },
+    {
+      "id": 5,
+      "hanzi": "青翠翠",
+      "tailo": "Tshenn-tshuì-tshuì",
+      "type": "ABB",
+      "meaning": "形容非常翠綠、青綠的樣子。"
+    },
+    {
+      "id": 6,
+      "hanzi": "甜蜜蜜",
+      "tailo": "Tinn-bi̍t-bi̍t",
+      "type": "ABB",
+      "meaning": "形容非常甜、甜膩的樣子。"
+    },
+    {
+      "id": 7,
+      "hanzi": "酸溜溜",
+      "tailo": "Sng-liu-liu",
+      "type": "ABB",
+      "meaning": "形容非常酸的樣子或嫉妒心重。"
+    },
+    {
+      "id": 8,
+      "hanzi": "冷吱吱",
+      "tailo": "Líng-ki-ki",
+      "type": "ABB",
+      "meaning": "形容非常冷、冰冷刺骨的樣子。"
+    },
+    {
+      "id": 9,
+      "hanzi": "燒烙烙",
+      "tailo": "Sio-lo̍h-lo̍h",
+      "type": "ABB",
+      "meaning": "形容非常燙、滾燙的樣子。"
+    },
+    {
+      "id": 10,
+      "hanzi": "軟糊糊",
+      "tailo": "Nńg-kôo-kôo",
+      "type": "ABB",
+      "meaning": "形容非常軟爛、軟糊的樣子。"
+    },
+    {
+      "id": 11,
+      "hanzi": "硬梆梆",
+      "tailo": "Ngē-pang-pang",
+      "type": "ABB",
+      "meaning": "形容非常硬、堅硬的樣子。"
+    },
+    {
+      "id": 12,
+      "hanzi": "油膩膩",
+      "tailo": "Iû-nī-nī",
+      "type": "ABB",
+      "meaning": "形容非常油膩、沾滿油的樣子。"
+    },
+    {
+      "id": 13,
+      "hanzi": "歡歡喜喜",
+      "tailo": "Huann-huann-hí-hí",
+      "type": "AABB",
+      "meaning": "形容非常開心、喜悅的狀態。"
+    },
+    {
+      "id": 14,
+      "hanzi": "平平安安",
+      "tailo": "Pênn-pênn-an-an",
+      "type": "AABB",
+      "meaning": "形容平安無事、一切順利。"
+    },
+    {
+      "id": 15,
+      "hanzi": "大大細細",
+      "tailo": "Tuā-tuā-sè-sè",
+      "type": "AABB",
+      "meaning": "形容大大小小、老老少少。"
+    },
+    {
+      "id": 16,
+      "hanzi": "清清楚楚",
+      "tailo": "Tshing-tshing-tshó-tshó",
+      "type": "AABB",
+      "meaning": "形容非常清楚明白。"
+    },
+    {
+      "id": 17,
+      "hanzi": "慢慢仔",
+      "tailo": "Bān-bān-á",
+      "type": "AAB",
+      "meaning": "慢慢地、不著急。"
+    },
+    {
+      "id": 18,
+      "hanzi": "好好仔",
+      "tailo": "Hó-hó-á",
+      "type": "AAB",
+      "meaning": "好好地、仔細地。"
+    },
+    {
+      "id": 19,
+      "hanzi": "輕輕仔",
+      "tailo": "Khin-khin-á",
+      "type": "AAB",
+      "meaning": "輕輕地、小心翼翼。"
+    },
+    {
+      "id": 20,
+      "hanzi": "圓滾滾",
+      "tailo": "Înn-kún-kún",
+      "type": "ABB",
+      "meaning": "形容圓圓胖胖、渾圓的樣子。"
+    },
+    {
+      "id": 21,
+      "hanzi": "黑趖趖",
+      "tailo": "O͘-sô-sô",
+      "type": "ABB",
+      "meaning": "形容非常黑、烏漆抹黑的樣子。"
+    },
+    {
+      "id": 22,
+      "hanzi": "冷霜霜",
+      "tailo": "Léng-sng-sng",
+      "type": "ABB",
+      "meaning": "形容非常冷、冷冰冰的樣子。"
+    },
+    {
+      "id": 23,
+      "hanzi": "燒滾滾",
+      "tailo": "Sio-kún-kún",
+      "type": "ABB",
+      "meaning": "形容非常燙、滾燙的樣子。"
+    },
+    {
+      "id": 24,
+      "hanzi": "甜粅粅",
+      "tailo": "Tiⁿ-bu̍t-bu̍t",
+      "type": "ABB",
+      "meaning": "形容非常甜、甜滋滋的樣子。"
+    }
+  ]
+}
