@@ -3,7 +3,7 @@ export function CentralCard({ word }) {
         <div
             className="w-full max-w-[360px] h-[600px] rounded-3xl p-6 flex flex-col relative overflow-hidden backdrop-blur-md"
             style={{
-                backgroundColor: `${word.themeColor}CC`,
+                backgroundColor: `${word.themeColor}80`,
             }}
         >
             {/* Top Left - Category & Type Labels */}
