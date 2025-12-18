@@ -34,7 +34,7 @@ export function CentralCard({ word }) {
                     {/* Tailo + Mic - Vertical */}
                     <div className="flex flex-col items-center gap-2">
                         <span
-                            className="text-white/60 text-sm font-medium tracking-wide"
+                            className="text-white/60 text-sm font-medium tracking-wide whitespace-nowrap"
                             style={{
                                 writingMode: 'vertical-rl',
                             }}
@@ -58,9 +58,9 @@ export function CentralCard({ word }) {
                     </div>
                 </div>
 
-                {/* Group 2: Meaning - Independent (with gap from Group 1) */}
+                {/* Group 2: Meaning - Independent, larger font */}
                 <span
-                    className="text-white/50 text-xs font-medium leading-relaxed max-h-48"
+                    className="text-white/50 text-base font-medium leading-relaxed max-h-48"
                     style={{
                         writingMode: 'vertical-rl',
                     }}
