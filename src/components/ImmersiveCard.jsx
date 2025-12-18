@@ -5,10 +5,10 @@ export function ImmersiveCard({ word, day, month }) {
             style={{ backgroundColor: word.themeColor }}
         >
             {/* Main Container */}
-            <div className="relative w-full h-screen flex items-center px-8 md:px-16 lg:px-24">
+            <div className="relative w-full h-screen flex items-center px-6 md:px-16 lg:px-24 overflow-hidden">
 
                 {/* Date Display - Top Right */}
-                <div className="absolute top-8 right-8 md:top-12 md:right-12 text-right">
+                <div className="absolute top-8 right-8 md:top-12 md:right-12 text-right z-10">
                     <div className="text-white/40 text-sm font-serif tracking-widest mb-1">
                         {month}月
                     </div>
@@ -21,7 +21,7 @@ export function ImmersiveCard({ word, day, month }) {
                 </div>
 
                 {/* Category Badge - Top Left */}
-                <div className="absolute top-8 left-8 md:top-12 md:left-12">
+                <div className="absolute top-8 left-8 md:top-12 md:left-12 z-10">
                     <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/70 text-xs font-serif tracking-widest border border-white/10">
                         {word.category}
                     </span>
@@ -31,60 +31,94 @@ export function ImmersiveCard({ word, day, month }) {
                 </div>
 
                 {/* Main Content Area */}
-                <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 lg:gap-16 w-full max-w-6xl mx-auto mt-16 lg:mt-0">
+                <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center gap-6 lg:gap-20 w-full mx-auto">
 
-                    {/* Left: Vertical Hanzi */}
-                    <div className="flex items-center gap-6">
-                        {/* Main Hanzi - Vertical */}
+                    {/* Left: Massive Vertical Hanzi */}
+                    <div className="flex items-end gap-4 lg:gap-6">
+                        {/* Main Hanzi - MASSIVE Vertical */}
                         <h1
-                            className="text-white text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-serif font-medium leading-none tracking-wider"
+                            className="text-white font-serif font-semibold leading-[0.85] select-none"
                             style={{
                                 writingMode: 'vertical-rl',
                                 textOrientation: 'upright',
-                                letterSpacing: '0.1em',
+                                fontSize: 'clamp(8rem, 25vw, 20rem)',
+                                letterSpacing: '-0.02em',
                             }}
                         >
                             {word.hanzi}
                         </h1>
 
-                        {/* Tailo - Vertical alongside */}
-                        <div
-                            className="text-white/50 text-lg md:text-xl font-serif tracking-wider"
-                            style={{
-                                writingMode: 'vertical-rl',
-                            }}
-                        >
-                            {word.tailo}
+                        {/* Tailo + Mic Icon - Vertical alongside */}
+                        <div className="flex flex-col items-center gap-4">
+                            <div
+                                className="text-white/50 text-base md:text-lg font-serif tracking-wider"
+                                style={{
+                                    writingMode: 'vertical-rl',
+                                }}
+                            >
+                                {word.tailo}
+                            </div>
+
+                            {/* Microphone Icon */}
+                            <button
+                                className="p-2 text-white/40 hover:text-white/70 transition-colors duration-300"
+                                aria-label="播放發音"
+                            >
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" x2="12" y1="19" y2="22" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
                     {/* Right: Meaning and Sentence */}
-                    <div className="flex flex-col items-center lg:items-start gap-8 lg:gap-12 max-w-md lg:pt-12">
+                    <div className="flex flex-col items-center lg:items-start gap-6 lg:gap-10 max-w-sm lg:max-w-md">
                         {/* Meaning */}
                         <p className="text-white/80 text-lg md:text-xl font-serif leading-relaxed text-center lg:text-left">
                             {word.meaning}
                         </p>
 
                         {/* Divider */}
-                        <div className="w-16 h-px bg-white/20" />
+                        <div className="w-12 h-px bg-white/20" />
 
-                        {/* Sentence with quotes */}
-                        <blockquote className="relative">
-                            <span className="absolute -left-4 -top-4 text-white/20 text-5xl font-serif">
-                                「
-                            </span>
-                            <p
-                                className="text-white/60 text-base md:text-lg font-serif leading-loose pl-4 lg:pl-0"
-                                style={{
-                                    writingMode: window.innerWidth >= 1024 ? 'vertical-rl' : 'horizontal-tb',
-                                }}
-                            >
+                        {/* Sentence with CSS Corner Quotes */}
+                        <div className="relative px-6 py-4">
+                            {/* Top-left corner */}
+                            <span
+                                className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-white/30"
+                                aria-hidden="true"
+                            />
+                            {/* Top-right corner */}
+                            <span
+                                className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-white/30"
+                                aria-hidden="true"
+                            />
+                            {/* Bottom-left corner */}
+                            <span
+                                className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-white/30"
+                                aria-hidden="true"
+                            />
+                            {/* Bottom-right corner */}
+                            <span
+                                className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-white/30"
+                                aria-hidden="true"
+                            />
+
+                            <p className="text-white/70 text-base md:text-lg font-serif font-bold leading-relaxed text-center lg:text-left">
                                 {word.sentence}
                             </p>
-                            <span className="absolute -right-4 -bottom-4 text-white/20 text-5xl font-serif">
-                                」
-                            </span>
-                        </blockquote>
+                        </div>
                     </div>
                 </div>
 
