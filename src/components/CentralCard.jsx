@@ -9,7 +9,7 @@ export function CentralCard({ word }) {
         >
             {/* Noise Texture Overlay */}
             <div
-                className="absolute inset-0 rounded-3xl pointer-events-none opacity-[0.03] mix-blend-overlay"
+                className="absolute inset-0 rounded-3xl pointer-events-none opacity-20 mix-blend-overlay"
                 style={{
                     backgroundImage: noiseTexture,
                     backgroundRepeat: 'repeat',
