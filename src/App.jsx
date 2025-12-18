@@ -25,7 +25,7 @@ function App() {
     <div
       className="min-h-screen w-full bg-cream font-sans relative flex flex-col items-center justify-center px-4 py-8"
       style={{
-        backgroundImage: `radial-gradient(rgba(0, 0, 0, 0.08) 5px, transparent 5px)`,
+        backgroundImage: `radial-gradient(circle, rgba(0, 0, 0, 0.09) 4px, transparent 4px)`,
         backgroundSize: '10px 10px',
       }}
     >
