@@ -22,7 +22,7 @@ export function CentralCard({ word, onShuffle, onShare }) {
             <div className="flex items-start justify-center gap-4 py-8 min-h-[320px]">
                 {/* Main Hanzi - Vertical */}
                 <h1
-                    className="text-white font-bold leading-[0.9] select-none"
+                    className="text-white font-semibold leading-[0.9] select-none"
                     style={{
                         writingMode: 'vertical-rl',
                         textOrientation: 'upright',
