@@ -150,8 +150,8 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     </div>
                 </div>
 
-                {/* Sentence Section + 播放按鈕 */}
-                <div className="shrink-0 mb-2 flex items-center gap-3">
+                {/* Sentence Section + 播放按鈕 - 固定高度確保按鈕位置一致 */}
+                <div className="shrink-0 mb-2 flex items-center gap-3" style={{ minHeight: '48px' }}>
                     <p
                         className="flex-1 text-white/90 text-sm font-medium leading-relaxed"
                         style={{
@@ -165,33 +165,35 @@ export function CentralCard({ word, onShuffle, onShare }) {
                         「{word.sentence}」
                     </p>
 
-                    {/* 播放按鈕 - 在例句右側，較大尺寸 */}
-                    {word.audioPath && (
-                        <button
-                            onClick={() => {
-                                const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
-                                const audio = new Audio(audioUrl);
-                                audio.play().catch(err => console.log('Audio play error:', err));
-                            }}
-                            className="shrink-0 p-2 text-white/70 hover:text-white transition-colors"
-                            style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}
-                            aria-label="播放發音"
-                        >
-                            <svg
-                                className="w-8 h-8"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                    {/* 播放按鈕區域 - 固定寬度 */}
+                    <div className="shrink-0 w-12 h-12 flex items-center justify-center">
+                        {word.audioPath && (
+                            <button
+                                onClick={() => {
+                                    const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
+                                    const audio = new Audio(audioUrl);
+                                    audio.play().catch(err => console.log('Audio play error:', err));
+                                }}
+                                className="shrink-0 p-2 text-white/70 hover:text-white transition-colors"
+                                style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}
+                                aria-label="播放發音"
                             >
-                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                                <line x1="12" x2="12" y1="19" y2="22" />
-                            </svg>
-                        </button>
-                    )}
+                                <svg
+                                    className="w-8 h-8"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" x2="12" y1="19" y2="22" />
+                                </svg>
+                            </button>
+                        )}
+                    </div>
                 </div>
 
                 {/* Separator Line */}
