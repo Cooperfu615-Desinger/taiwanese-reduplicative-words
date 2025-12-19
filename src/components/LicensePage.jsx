@@ -87,7 +87,6 @@ export function LicensePage({ onClose }) {
                 {/* 三、免責聲明 */}
                 <section className="license-section">
                     <h2 className="section-title">三、免責聲明</h2>
-                    <p className="section-subtitle-text">Disclaimer</p>
                     <ul className="section-list">
                         <li>
                             <strong>非官方代表：</strong>
@@ -106,21 +105,20 @@ export function LicensePage({ onClose }) {
                     <p className="section-text">
                         若您發現本站內容有任何版權標示疑慮、錯誤或侵權之處，請立即與我們聯繫，我們將儘速處理：
                     </p>
-                    <p className="contact-email">
-                        📧 聯絡電子郵件：
+                    <div className="contact-button-container">
                         <a
                             href="mailto:nailai7981.ai@gmail.com"
-                            className="email-link"
+                            className="contact-button"
                         >
-                            nailai7981.ai@gmail.com
+                            聯絡電子郵件：nailai7981.ai@gmail.com
                         </a>
-                    </p>
+                    </div>
                 </section>
 
                 {/* 返回按鈕 */}
                 <div className="back-button-container">
                     <button onClick={onClose} className="back-button">
-                        ← 返回首頁
+                        返回首頁
                     </button>
                 </div>
             </div>

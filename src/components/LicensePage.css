@@ -150,14 +150,33 @@
     border-bottom-style: solid;
 }
 
-/* 聯繫郵件 */
-.contact-email {
-    font-size: 1rem;
-    margin: 1rem 0;
-    padding: 1rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
-    border-radius: 0.75rem;
-    border-left: 4px solid #2d4739;
+/* 聯繫郵件按鈕 - 與卡片按鈕相同質感 */
+.contact-button-container {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #2d4739;
+    background: rgba(45, 71, 57, 0.15);
+    border: 1px solid rgba(45, 71, 57, 0.3);
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.contact-button:hover {
+    background: rgba(45, 71, 57, 0.25);
+    color: #1e3a2f;
 }
 
 .email-link {
@@ -180,25 +199,29 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* 返回按鈕 - 與卡片按鈕相同質感 */
 .back-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: 0.875rem 2rem;
     font-size: 0.9375rem;
     font-weight: 500;
-    color: #fff;
-    background: linear-gradient(135deg, #2d4739 0%, #1e3a2f 100%);
-    border: none;
+    color: #2d4739;
+    background: rgba(45, 71, 57, 0.15);
+    border: 1px solid rgba(45, 71, 57, 0.3);
     border-radius: 2rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(45, 71, 57, 0.3);
+    transition: all 0.2s ease;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .back-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(45, 71, 57, 0.4);
+    background: rgba(45, 71, 57, 0.25);
+    color: #1e3a2f;
+    transform: translateY(-1px);
 }
 
 /* 響應式設計 */
