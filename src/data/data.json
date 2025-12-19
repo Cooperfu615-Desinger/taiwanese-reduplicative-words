@@ -2,243 +2,1875 @@
   "words": [
     {
       "id": 1,
-      "hanzi": "紅記記",
-      "tailo": "Âng-kì-kì",
-      "type": "ABB",
-      "meaning": "形容非常紅、紅通通的樣子。",
-      "sentence": "伊受著驚，面紅記記。",
-      "themeColor": "#7B3F38",
-      "category": "視覺"
+      "hanzi": "千千萬萬",
+      "tailo": "tshian-tshian-bān-bān",
+      "type": "AABB",
+      "meaning": "山頂的暗暝，會使看著千千萬萬粒星。",
+      "sentence": "山頂的暗暝，會使看著千千萬萬粒星。",
+      "themeColor": "#5D4E60"
     },
     {
       "id": 2,
-      "hanzi": "白雪雪",
-      "tailo": "Pe̍h-seh-seh",
+      "hanzi": "去了了",
+      "tailo": "khì-liáu-liáu",
       "type": "ABB",
-      "meaning": "形容非常白、雪白的樣子。",
-      "sentence": "阿媽的頭毛白雪雪。",
-      "themeColor": "#4A5568",
-      "category": "視覺"
+      "meaning": "完蛋了、全去了。",
+      "sentence": "若是一个毋好勢，代誌就去了了矣。",
+      "themeColor": "#533483"
     },
     {
       "id": 3,
-      "hanzi": "烏嚕嚕",
-      "tailo": "Oo-lu-lu",
+      "hanzi": "幼麵麵",
+      "tailo": "iù-mī-mī",
       "type": "ABB",
-      "meaning": "形容非常黑、烏黑的樣子。",
-      "sentence": "暗時天頂烏嚕嚕，欲落雨矣。",
-      "themeColor": "#1A202C",
-      "category": "視覺"
+      "meaning": "細嫩。",
+      "sentence": "伊的皮膚幼麵麵。",
+      "themeColor": "#474787"
     },
     {
       "id": 4,
-      "hanzi": "黃澄澄",
-      "tailo": "N̂g-tîn-tîn",
+      "hanzi": "白蔥蔥",
+      "tailo": "pe̍h-tshang-tshang",
       "type": "ABB",
-      "meaning": "形容金黃色、閃亮發黃的樣子。",
-      "sentence": "秋天的稻仔黃澄澄，真媠。",
-      "themeColor": "#8B6914",
-      "category": "視覺"
+      "meaning": "形容非常潔白。",
+      "sentence": "彼个老大人喙鬚白蔥蔥。",
+      "themeColor": "#533483"
     },
     {
       "id": 5,
-      "hanzi": "青翠翠",
-      "tailo": "Tshenn-tshuì-tshuì",
+      "hanzi": "白鑠鑠",
+      "tailo": "pe̍h-siak-siak",
       "type": "ABB",
-      "meaning": "形容非常翠綠、青綠的樣子。",
-      "sentence": "山頂的樹仔青翠翠。",
-      "themeColor": "#2F5C56",
-      "category": "視覺"
+      "meaning": "白鑠鑠的龍銀，啥物人看著袂佮意？",
+      "sentence": "白鑠鑠的龍銀，啥物人看著袂佮意？",
+      "themeColor": "#4A0E4E"
     },
     {
       "id": 6,
-      "hanzi": "甜蜜蜜",
-      "tailo": "Tinn-bi̍t-bi̍t",
+      "hanzi": "行透透",
+      "tailo": "kiânn-thàu-thàu",
       "type": "ABB",
-      "meaning": "形容非常甜、甜膩的樣子。",
-      "sentence": "這粒芒果甜蜜蜜，真好食。",
-      "themeColor": "#9C4221",
-      "category": "味覺"
+      "meaning": "伊已經臺灣全島行透透矣。",
+      "sentence": "伊已經臺灣全島行透透矣。",
+      "themeColor": "#5D4E60"
     },
     {
       "id": 7,
-      "hanzi": "酸溜溜",
-      "tailo": "Sng-liu-liu",
+      "hanzi": "老硞硞",
+      "tailo": "lāu-khok-khok",
       "type": "ABB",
-      "meaning": "形容非常酸的樣子或嫉妒心重。",
-      "sentence": "這粒柑仔酸溜溜，食袂落去。",
-      "themeColor": "#5B7553",
-      "category": "味覺"
+      "meaning": "彼个阿婆老硞硞矣，猶閣咧做生理。",
+      "sentence": "彼个阿婆老硞硞矣，猶閣咧做生理。",
+      "themeColor": "#4A4A4A"
     },
     {
       "id": 8,
       "hanzi": "冷吱吱",
-      "tailo": "Líng-ki-ki",
+      "tailo": "líng-ki-ki",
       "type": "ABB",
-      "meaning": "形容非常冷、冰冷刺骨的樣子。",
-      "sentence": "今仔日風真透，外口冷吱吱。",
-      "themeColor": "#2C3E50",
-      "category": "觸覺"
+      "meaning": "跤手尾冷吱吱",
+      "sentence": "跤手尾冷吱吱",
+      "themeColor": "#2F4F4F"
     },
     {
       "id": 9,
-      "hanzi": "燒烙烙",
-      "tailo": "Sio-lo̍h-lo̍h",
-      "type": "ABB",
-      "meaning": "形容非常燙、滾燙的樣子。",
-      "sentence": "這碗湯燒烙烙，細膩燙著。",
-      "themeColor": "#C53030",
-      "category": "觸覺"
+      "hanzi": "坎坎坷坷",
+      "tailo": "khám-khám-khia̍t-khia̍t",
+      "type": "AABB",
+      "meaning": "伊的人生，坎坎坷坷，講起來話頭長啦！",
+      "sentence": "伊的人生，坎坎坷坷，講起來話頭長啦！",
+      "themeColor": "#2D3436"
     },
     {
       "id": 10,
-      "hanzi": "軟糊糊",
-      "tailo": "Nńg-kôo-kôo",
-      "type": "ABB",
-      "meaning": "形容非常軟爛、軟糊的樣子。",
-      "sentence": "這塊粿軟糊糊，無好食。",
-      "themeColor": "#744210",
-      "category": "觸覺"
+      "hanzi": "來來去去",
+      "tailo": "lâi-lâi-khì-khì",
+      "type": "AABB",
+      "meaning": "來來去去",
+      "sentence": "來來去去",
+      "themeColor": "#3D3D3D"
     },
     {
       "id": 11,
-      "hanzi": "硬梆梆",
-      "tailo": "Ngē-pang-pang",
+      "hanzi": "刺耙耙",
+      "tailo": "tshiah-pê-pê",
       "type": "ABB",
-      "meaning": "形容非常硬、堅硬的樣子。",
-      "sentence": "這塊餅硬梆梆，咬袂離。",
-      "themeColor": "#553C2E",
-      "category": "觸覺"
+      "meaning": "話會使好好仔講，毋免按呢刺耙耙。",
+      "sentence": "話會使好好仔講，毋免按呢刺耙耙。",
+      "themeColor": "#4B3832"
     },
     {
       "id": 12,
-      "hanzi": "油膩膩",
-      "tailo": "Iû-nī-nī",
+      "hanzi": "拑牢牢",
+      "tailo": "khînn-tiâu-tiâu",
       "type": "ABB",
-      "meaning": "形容非常油膩、沾滿油的樣子。",
-      "sentence": "這盤菜油膩膩，食了會膏。",
-      "themeColor": "#5C4033",
-      "category": "觸覺"
+      "meaning": "這个囡仔真驚生份，出外攏共𪜶老母拑牢牢。",
+      "sentence": "這个囡仔真驚生份，出外攏共𪜶老母拑牢牢。",
+      "themeColor": "#2C2C54"
     },
     {
       "id": 13,
-      "hanzi": "歡歡喜喜",
-      "tailo": "Huann-huann-hí-hí",
+      "hanzi": "沓沓滴滴",
+      "tailo": "ta̍p-ta̍p-tih-tih",
       "type": "AABB",
-      "meaning": "形容非常開心、喜悅的狀態。",
-      "sentence": "過年的時，全家歡歡喜喜。",
-      "themeColor": "#9B2C2C",
-      "category": "情緒"
+      "meaning": "代誌沓沓滴滴，按怎做都做袂了。",
+      "sentence": "代誌沓沓滴滴，按怎做都做袂了。",
+      "themeColor": "#2D3436"
     },
     {
       "id": 14,
-      "hanzi": "平平安安",
-      "tailo": "Pênn-pênn-an-an",
-      "type": "AABB",
-      "meaning": "形容平安無事、一切順利。",
-      "sentence": "祝你出門平平安安轉來。",
-      "themeColor": "#2D3748",
-      "category": "情緒"
+      "hanzi": "油肭肭",
+      "tailo": "iû-leh-leh",
+      "type": "ABB",
+      "meaning": "碗盤油肭肭，愛用燒水才洗會清氣。",
+      "sentence": "碗盤油肭肭，愛用燒水才洗會清氣。",
+      "themeColor": "#0F3460"
     },
     {
       "id": 15,
-      "hanzi": "大大細細",
-      "tailo": "Tuā-tuā-sè-sè",
-      "type": "AABB",
-      "meaning": "形容大大小小、老老少少。",
-      "sentence": "厝內大大細細攏來食飯。",
-      "themeColor": "#3D5A5B",
-      "category": "狀態"
+      "hanzi": "油洗洗",
+      "tailo": "iû-sé-sé/iû-sué-sué",
+      "type": "ABB",
+      "meaning": "伊趁甲油洗洗。",
+      "sentence": "伊趁甲油洗洗。",
+      "themeColor": "#1E272E"
     },
     {
       "id": 16,
-      "hanzi": "清清楚楚",
-      "tailo": "Tshing-tshing-tshó-tshó",
-      "type": "AABB",
-      "meaning": "形容非常清楚明白。",
-      "sentence": "我共你講清清楚楚矣。",
-      "themeColor": "#31587A",
-      "category": "狀態"
+      "hanzi": "直溜溜",
+      "tailo": "ti̍t-liu-liu",
+      "type": "ABB",
+      "meaning": "這枝樹椏直溜溜，會使取來做枴仔。",
+      "sentence": "這枝樹椏直溜溜，會使取來做枴仔。",
+      "themeColor": "#533483"
     },
     {
       "id": 17,
-      "hanzi": "慢慢仔",
-      "tailo": "Bān-bān-á",
-      "type": "AAB",
-      "meaning": "慢慢地、不著急。",
-      "sentence": "你慢慢仔行，毋免急。",
-      "themeColor": "#4A5568",
-      "category": "動作"
+      "hanzi": "青恂恂",
+      "tailo": "tshenn-sún-sún/tshinn-sún-sún",
+      "type": "ABB",
+      "meaning": "伊驚甲面仔青恂恂。",
+      "sentence": "伊驚甲面仔青恂恂。",
+      "themeColor": "#533483"
     },
     {
       "id": 18,
-      "hanzi": "好好仔",
-      "tailo": "Hó-hó-á",
-      "type": "AAB",
-      "meaning": "好好地、仔細地。",
-      "sentence": "你愛好好仔讀冊。",
-      "themeColor": "#285E61",
-      "category": "動作"
+      "hanzi": "指指揬揬",
+      "tailo": "kí-kí-tu̍h-tu̍h",
+      "type": "AABB",
+      "meaning": "伊就是傷無良心，才會予人指指揬揬。",
+      "sentence": "伊就是傷無良心，才會予人指指揬揬。",
+      "themeColor": "#474787"
     },
     {
       "id": 19,
-      "hanzi": "輕輕仔",
-      "tailo": "Khin-khin-á",
-      "type": "AAB",
-      "meaning": "輕輕地、小心翼翼。",
-      "sentence": "輕輕仔共門關起來。",
-      "themeColor": "#4A5568",
-      "category": "動作"
+      "hanzi": "洘秫秫",
+      "tailo": "khó-tsu̍t-tsu̍t",
+      "type": "ABB",
+      "meaning": "戲院頭前洘秫秫。",
+      "sentence": "戲院頭前洘秫秫。",
+      "themeColor": "#34495E"
     },
     {
       "id": 20,
-      "hanzi": "圓滾滾",
-      "tailo": "Înn-kún-kún",
+      "hanzi": "活跳跳",
+      "tailo": "ua̍h-thiàu-thiàu",
       "type": "ABB",
-      "meaning": "形容圓圓胖胖、渾圓的樣子。",
-      "sentence": "嬰仔的面圓滾滾，真古錐。",
-      "themeColor": "#6B4C3B",
-      "category": "視覺"
+      "meaning": "活跳跳",
+      "sentence": "活跳跳",
+      "themeColor": "#474787"
     },
     {
       "id": 21,
-      "hanzi": "黑趖趖",
-      "tailo": "O͘-sô-sô",
+      "hanzi": "看出出",
+      "tailo": "khuànn-tshut-tshut",
       "type": "ABB",
-      "meaning": "形容非常黑、烏漆抹黑的樣子。",
-      "sentence": "落雨天，天頂黑趖趖。",
-      "themeColor": "#1C1C1C",
-      "category": "視覺"
+      "meaning": "看穿、看透。識破別人的舉止、行動。",
+      "sentence": "你用奸雄步，我早就看出出矣。",
+      "themeColor": "#5D4E60"
     },
     {
       "id": 22,
-      "hanzi": "冷霜霜",
-      "tailo": "Léng-sng-sng",
+      "hanzi": "看現現",
+      "tailo": "khuànn-hiān-hiān",
       "type": "ABB",
-      "meaning": "形容非常冷、冷冰冰的樣子。",
-      "sentence": "伊的手冷霜霜，緊來烘火。",
-      "themeColor": "#34495E",
-      "category": "觸覺"
+      "meaning": "看透。形容人把事物看得一清二楚。",
+      "sentence": "我做的代誌逐家看現現，毋驚人講閒仔話。",
+      "themeColor": "#4B3832"
     },
     {
       "id": 23,
-      "hanzi": "燒滾滾",
-      "tailo": "Sio-kún-kún",
+      "hanzi": "紅記記",
+      "tailo": "âng-kì-kì",
       "type": "ABB",
-      "meaning": "形容非常燙、滾燙的樣子。",
-      "sentence": "水燒滾滾，會使泡茶矣。",
-      "themeColor": "#B7410E",
-      "category": "觸覺"
+      "meaning": "伊穿甲規身軀紅記記。",
+      "sentence": "伊穿甲規身軀紅記記。",
+      "themeColor": "#2C2C54"
     },
     {
       "id": 24,
-      "hanzi": "甜粅粅",
-      "tailo": "Tiⁿ-bu̍t-bu̍t",
+      "hanzi": "紅絳絳",
+      "tailo": "âng-kòng-kòng",
       "type": "ABB",
-      "meaning": "形容非常甜、甜滋滋的樣子。",
-      "sentence": "這杯蜜茶甜粅粅，真好啉。",
-      "themeColor": "#8D6E63",
-      "category": "味覺"
+      "meaning": "你的面哪會紅絳絳？",
+      "sentence": "你的面哪會紅絳絳？",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 25,
+      "hanzi": "重重疊疊",
+      "tailo": "tîng-tîng-tha̍h-tha̍h",
+      "type": "AABB",
+      "meaning": "你的罪惡重重疊疊，洗袂清啦！",
+      "sentence": "你的罪惡重重疊疊，洗袂清啦！",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 26,
+      "hanzi": "哩哩囉囉",
+      "tailo": "li-li-lo-lo",
+      "type": "AABB",
+      "meaning": "你講甲哩哩囉囉，我聽攏無！",
+      "sentence": "你講甲哩哩囉囉，我聽攏無！",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 27,
+      "hanzi": "害了了",
+      "tailo": "hāi-liáu-liáu",
+      "type": "ABB",
+      "meaning": "完蛋了。事情毀滅、沒有希望了。",
+      "sentence": "今攏害了了矣！",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 28,
+      "hanzi": "挐氅氅",
+      "tailo": "jû-tsháng-tsháng/lû-tsháng-tsháng",
+      "type": "ABB",
+      "meaning": "形容非常雜亂，毫無條理。",
+      "sentence": "規間厝舞甲挐氅氅。",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 29,
+      "hanzi": "時時刻刻",
+      "tailo": "sî-sî-khik-khik",
+      "type": "AABB",
+      "meaning": "時常、常常。",
+      "sentence": "我時時刻刻都咧思念你。",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 30,
+      "hanzi": "氣怫怫",
+      "tailo": "khì-phut-phut",
+      "type": "ABB",
+      "meaning": "氣沖沖。",
+      "sentence": "看你按呢氣怫怫，是為著啥物代誌？",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 31,
+      "hanzi": "烏㽎㽎",
+      "tailo": "oo-sìm-sìm",
+      "type": "ABB",
+      "meaning": "伊的頭毛烏㽎㽎，足媠的。",
+      "sentence": "伊的頭毛烏㽎㽎，足媠的。",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 32,
+      "hanzi": "烏趖趖",
+      "tailo": "oo-sô-sô",
+      "type": "ABB",
+      "meaning": "烏黑。形容很黑。",
+      "sentence": "運動會閣拄著出大日，逐家一定會曝甲烏趖趖。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 33,
+      "hanzi": "笑咍咍",
+      "tailo": "tshiò-hai-hai",
+      "type": "ABB",
+      "meaning": "逐家咧開講，講甲笑咍咍。",
+      "sentence": "逐家咧開講，講甲笑咍咍。",
+      "themeColor": "#1A1A2E"
+    },
+    {
+      "id": 34,
+      "hanzi": "臭薟薟",
+      "tailo": "tshàu-hiam-hiam",
+      "type": "ABB",
+      "meaning": "便所臭薟薟，予人鼻著強欲擋袂牢。",
+      "sentence": "便所臭薟薟，予人鼻著強欲擋袂牢。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 35,
+      "hanzi": "馬馬虎虎",
+      "tailo": "má-má-hu-hu",
+      "type": "AABB",
+      "meaning": "隨隨便便。形容觀念偏差，做事推拖敷衍的態度。",
+      "sentence": "身體健康上重要，衛生習慣袂當馬馬虎虎。",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 36,
+      "hanzi": "婦人人",
+      "tailo": "hū-jîn-lâng/hū-lîn-lâng",
+      "type": "ABB",
+      "meaning": "恁新婦人人呵咾。",
+      "sentence": "恁新婦人人呵咾。",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 37,
+      "hanzi": "密喌喌",
+      "tailo": "ba̍t-tsiuh-tsiuh",
+      "type": "ABB",
+      "meaning": "緊緊的。形容非常緊密，沒有空隙。",
+      "sentence": "窗仔門關甲密喌喌，連胡蠅都飛袂入去。",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 38,
+      "hanzi": "惜命命",
+      "tailo": "sioh-miā-miā",
+      "type": "ABB",
+      "meaning": "疼惜有加、十分珍惜。",
+      "sentence": "阿英雖然是前人囝，毋過𪜶後母仝款共伊惜命命。",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 39,
+      "hanzi": "掩掩揜揜",
+      "tailo": "ng-ng-iap-iap",
+      "type": "AABB",
+      "meaning": "遮遮掩掩、偷偷摸摸。",
+      "sentence": "伊做代誌不時都掩掩揜揜，毋知是咧做啥物歹代。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 40,
+      "hanzi": "甜粅粅",
+      "tailo": "tinn-but-but",
+      "type": "ABB",
+      "meaning": "日本點心甜粅粅，食濟會大箍。",
+      "sentence": "日本點心甜粅粅，食濟會大箍。",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 41,
+      "hanzi": "軟𩛩𩛩",
+      "tailo": "nńg-kauh-kauh",
+      "type": "ABB",
+      "meaning": "形容身體疲倦而全身無力。",
+      "sentence": "我今仔日足忝的！規身軀軟𩛩𩛩。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 42,
+      "hanzi": "軟㽎㽎",
+      "tailo": "nńg-sìm-sìm",
+      "type": "ABB",
+      "meaning": "軟綿綿。柔軟而且富有彈性。",
+      "sentence": "彼塊雞卵糕軟㽎㽎，誠好食！",
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 43,
+      "hanzi": "軟荍荍",
+      "tailo": "nńg-siô-siô",
+      "type": "ABB",
+      "meaning": "有氣無力的樣子。",
+      "sentence": "我規身軀軟荍荍，攏無想欲振動。",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 44,
+      "hanzi": "軟膏膏",
+      "tailo": "nńg-kô-kô",
+      "type": "ABB",
+      "meaning": "形容柔軟。",
+      "sentence": "遮的弓蕉已經軟膏膏矣，毋緊食著愛擲掉！",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 45,
+      "hanzi": "啼啼哭哭",
+      "tailo": "thî-thî-khàu-khàu",
+      "type": "AABB",
+      "meaning": "自昨暝到今伊攏一直啼啼哭哭。",
+      "sentence": "自昨暝到今伊攏一直啼啼哭哭。",
+      "themeColor": "#3A3A3A"
+    },
+    {
+      "id": 46,
+      "hanzi": "媠噹噹",
+      "tailo": "suí-tang-tang",
+      "type": "ABB",
+      "meaning": "伊妝甲媠噹噹，大概是欲去約會。",
+      "sentence": "伊妝甲媠噹噹，大概是欲去約會。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 47,
+      "hanzi": "惡確確",
+      "tailo": "ok-khia̍k-khia̍k",
+      "type": "ABB",
+      "meaning": "很凶惡的樣子。",
+      "sentence": "伊開喙就惡確確，袂輸咱攏欠伊的錢咧。",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 48,
+      "hanzi": "焦涸涸",
+      "tailo": "ta-khok-khok",
+      "type": "ABB",
+      "meaning": "水溝仔已經焦涸涸矣。",
+      "sentence": "水溝仔已經焦涸涸矣。",
+      "themeColor": "#1A1A2E"
+    },
+    {
+      "id": 49,
+      "hanzi": "硬迸迸",
+      "tailo": "ngē-piàng-piàng/ngī-piàng-piàng",
+      "type": "ABB",
+      "meaning": "硬邦邦。形容物品堅硬，或辦事態度強硬、死板。",
+      "sentence": "你做代誌毋通硬迸迸，有時陣愛變通一下。",
+      "themeColor": "#2D3436"
+    },
+    {
+      "id": 50,
+      "hanzi": "註好好",
+      "tailo": "tsù-hó-hó",
+      "type": "ABB",
+      "meaning": "註定。一種宿命思想，認為人世間的任何遭遇或變化早已被上天安排好，人力無法更改。",
+      "sentence": "伊相信人的命運早就註好好矣。",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 51,
+      "hanzi": "貴參參",
+      "tailo": "kuì-som-som",
+      "type": "ABB",
+      "meaning": "非常昂貴的。",
+      "sentence": "這款貴參參的物件你曷買會落去！",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 52,
+      "hanzi": "閒仙仙",
+      "tailo": "îng-sian-sian",
+      "type": "ABB",
+      "meaning": "伊退休了後規日閒仙仙，定定四界去遊山玩水。",
+      "sentence": "伊退休了後規日閒仙仙，定定四界去遊山玩水。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 53,
+      "hanzi": "黃錦錦",
+      "tailo": "n̂g-gìm-gìm",
+      "type": "ABB",
+      "meaning": "形容顏色金黃。",
+      "sentence": "彼欉樹仔花開甲黃錦錦。",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 54,
+      "hanzi": "亂操操",
+      "tailo": "luān-tshau-tshau",
+      "type": "ABB",
+      "meaning": "凌亂。雜亂而無秩序的樣子。",
+      "sentence": "規間厝舞甲亂操操，無，恁是咧造反是無？",
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 55,
+      "hanzi": "搝搝搦搦",
+      "tailo": "khiú-khiú-la̍k-la̍k",
+      "type": "AABB",
+      "meaning": "為著一屑仔錢佇街仔路搝搝搦搦，敢會看口得？",
+      "sentence": "為著一屑仔錢佇街仔路搝搝搦搦，敢會看口得？",
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 56,
+      "hanzi": "新點點",
+      "tailo": "sin-tiám-tiám",
+      "type": "ABB",
+      "meaning": "嶄新。形容很新。",
+      "sentence": "伊穿一軀新點點的洋裝來食喜酒。",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 57,
+      "hanzi": "暗漠漠",
+      "tailo": "àm-bo̍k-bo̍k",
+      "type": "ABB",
+      "meaning": "黑漆漆。形容非常黑暗的樣子，完全看不見。",
+      "sentence": "外口無路燈，暗漠漠。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 58,
+      "hanzi": "暗趖趖",
+      "tailo": "àm-sô-sô",
+      "type": "ABB",
+      "meaning": "黑漆漆。形容漆黑一片。",
+      "sentence": "公園內暗趖趖，看著足恐怖。",
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 59,
+      "hanzi": "滑溜溜",
+      "tailo": "ku̍t-liu-liu",
+      "type": "ABB",
+      "meaning": "溜滑。非常滑。",
+      "sentence": "你行路愛細膩，塗跤滑溜溜。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 60,
+      "hanzi": "碎糊糊",
+      "tailo": "tshuì-kôo-kôo",
+      "type": "ABB",
+      "meaning": "破碎不堪。",
+      "sentence": "兩翁仔某冤家，碗盤摔甲碎糊糊。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 61,
+      "hanzi": "嘻嘻嘩嘩",
+      "tailo": "hi-hi-huā-huā",
+      "type": "AABB",
+      "meaning": "一陣人佇遐嘻嘻嘩嘩，有夠吵！",
+      "sentence": "一陣人佇遐嘻嘻嘩嘩，有夠吵！",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 62,
+      "hanzi": "憂結結",
+      "tailo": "iu-kat-kat",
+      "type": "ABB",
+      "meaning": "伊一个面仔憂結結，毋知咧煩惱啥？",
+      "sentence": "伊一个面仔憂結結，毋知咧煩惱啥？",
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 63,
+      "hanzi": "皺襞襞",
+      "tailo": "jiâu-phé-phé/liâu-phé-phé",
+      "type": "ABB",
+      "meaning": "規領衫皺襞襞。",
+      "sentence": "規領衫皺襞襞。",
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 64,
+      "hanzi": "糊瘰瘰",
+      "tailo": "hôo-luì-luì",
+      "type": "ABB",
+      "meaning": "烏鴉喙，糊瘰瘰，見講見對。",
+      "sentence": "烏鴉喙，糊瘰瘰，見講見對。",
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 65,
+      "hanzi": "懊嘟嘟",
+      "tailo": "àu-tū-tū",
+      "type": "ABB",
+      "meaning": "激甲一个面懊嘟嘟，無，你這馬是咧佮我賭氣是無？",
+      "sentence": "激甲一个面懊嘟嘟，無，你這馬是咧佮我賭氣是無？",
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 66,
+      "hanzi": "激外外",
+      "tailo": "kik-guā-guā",
+      "type": "ABB",
+      "meaning": "置身事外。裝出一副事不關己的樣子。",
+      "sentence": "你想講激外外就無代誌矣是無？",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 67,
+      "hanzi": "激怐怐",
+      "tailo": "kik-khòo-khòo",
+      "type": "ABB",
+      "meaning": "裝傻。",
+      "sentence": "做你激怐怐無要緊！",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 68,
+      "hanzi": "澹漉漉",
+      "tailo": "tâm-lok-lok",
+      "type": "ABB",
+      "meaning": "溼淋淋、溼答答。形容含水量很高的樣子。",
+      "sentence": "澹漉漉",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 69,
+      "hanzi": "澹糊糊",
+      "tailo": "tâm-kôo-kôo",
+      "type": "ABB",
+      "meaning": "溼淋淋、溼答答。形容含水量很高的樣子。",
+      "sentence": "雨傘囥佇門喙，莫提入來，厝內才袂澹糊糊。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 70,
+      "hanzi": "橫霸霸",
+      "tailo": "huâinn-pà-pà/huînn-pà-pà",
+      "type": "ABB",
+      "meaning": "彼个人橫霸霸，你毋通去惹伊。",
+      "sentence": "彼个人橫霸霸，你毋通去惹伊。",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 71,
+      "hanzi": "燒滾滾",
+      "tailo": "sio-kún-kún",
+      "type": "ABB",
+      "meaning": "熱騰騰。",
+      "sentence": "湯拄𣁳起來爾爾，猶燒滾滾，毋好燙著。",
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 72,
+      "hanzi": "窸窸窣窣",
+      "tailo": "si-si-su̍t-su̍t",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 73,
+      "hanzi": "膨獅獅",
+      "tailo": "phòng-sai-sai",
+      "type": "ABB",
+      "meaning": "頭拄才洗好，膨獅獅。",
+      "sentence": "頭拄才洗好，膨獅獅。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 74,
+      "hanzi": "糜糜卯卯",
+      "tailo": "mi-mi-mauh-mauh",
+      "type": "AABB",
+      "meaning": "彼台車予人挵甲糜糜卯卯。",
+      "sentence": "彼台車予人挵甲糜糜卯卯。",
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 75,
+      "hanzi": "臆出出",
+      "tailo": "ioh-tshut-tshut",
+      "type": "ABB",
+      "meaning": "伊想欲創啥，早就予逐家臆出出矣。",
+      "sentence": "伊想欲創啥，早就予逐家臆出出矣。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 76,
+      "hanzi": "聲聲句句",
+      "tailo": "siann-siann-kù-kù",
+      "type": "AABB",
+      "meaning": "聲聲句句講欲做好囝，串做攏予人受氣的歹代誌。",
+      "sentence": "聲聲句句講欲做好囝，串做攏予人受氣的歹代誌。",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 77,
+      "hanzi": "闊莽莽",
+      "tailo": "khuah-bóng-bóng",
+      "type": "ABB",
+      "meaning": "形容非常遼闊，一望無垠。",
+      "sentence": "一片闊莽莽的草埔。",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 78,
+      "hanzi": "闊閬閬",
+      "tailo": "khuah-lòng-lòng",
+      "type": "ABB",
+      "meaning": "非常寬闊。",
+      "sentence": "一間厝闊閬閬。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 79,
+      "hanzi": "黏黐黐",
+      "tailo": "liâm-thi-thi",
+      "type": "ABB",
+      "meaning": "黏答答。形容黏黏溼溼的樣子。",
+      "sentence": "汗流甲規身軀黏黐黐。",
+      "themeColor": "#2D3436"
+    },
+    {
+      "id": 80,
+      "hanzi": "離離落落",
+      "tailo": "li-li-lak-lak",
+      "type": "AABB",
+      "meaning": "零零落落。形容凌亂散落而沒有條理。",
+      "sentence": "我口試講甲離離落落，一定考袂牢。",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 81,
+      "hanzi": "穩觸觸",
+      "tailo": "ún-tak-tak",
+      "type": "ABB",
+      "meaning": "篤定、可靠。",
+      "sentence": "若靠伊是絕對穩觸觸。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 82,
+      "hanzi": "譀呱呱",
+      "tailo": "hàm-kuā-kuā",
+      "type": "ABB",
+      "meaning": "伊講的話譀呱呱，敢有人會相信？",
+      "sentence": "伊講的話譀呱呱，敢有人會相信？",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 83,
+      "hanzi": "霧嗄嗄",
+      "tailo": "bū-sà-sà",
+      "type": "ABB",
+      "meaning": "矇矓模糊的樣子。比喻一頭霧水，事物理不出頭緒，混亂而無條理。",
+      "sentence": "你講遐爾濟，害我聽甲霧嗄嗄。",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 84,
+      "hanzi": "鹹篤篤",
+      "tailo": "kiâm-tok-tok",
+      "type": "ABB",
+      "meaning": "形容味道很鹹。",
+      "sentence": "湯煮甲鹹篤篤，是欲按怎食？",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 85,
+      "hanzi": "爛糊糊",
+      "tailo": "nuā-kôo-kôo",
+      "type": "ABB",
+      "meaning": "形容非常稀爛。",
+      "sentence": "豆腐硩甲爛糊糊。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 86,
+      "hanzi": "歡歡喜喜",
+      "tailo": "huann-huann-hí-hí",
+      "type": "AABB",
+      "meaning": "歡歡喜喜會較好過日。",
+      "sentence": "歡歡喜喜會較好過日。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 87,
+      "hanzi": "彎彎斡斡",
+      "tailo": "uan-uan-uat-uat",
+      "type": "AABB",
+      "meaning": "這山路細條閣彎彎斡斡，車有夠歹駛。",
+      "sentence": "這山路細條閣彎彎斡斡，車有夠歹駛。",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 88,
+      "hanzi": "𩚨嗲嗲",
+      "tailo": "khiū-teh-teh",
+      "type": "ABB",
+      "meaning": "柿粿𩚨嗲嗲、甜粅粅，真好食。",
+      "sentence": "柿粿𩚨嗲嗲、甜粅粅，真好食。",
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 89,
+      "hanzi": "𠕇硞硞",
+      "tailo": "tīng-khok-khok",
+      "type": "ABB",
+      "meaning": "形容堅硬、強硬。",
+      "sentence": "石頭𠕇硞硞",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 90,
+      "hanzi": "肥朒朒",
+      "tailo": "puî-tsut-tsut",
+      "type": "ABB",
+      "meaning": "伊的豬仔，逐隻都飼甲肥朒朒。",
+      "sentence": "伊的豬仔，逐隻都飼甲肥朒朒。",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 91,
+      "hanzi": "事事項項",
+      "tailo": "sū-sū-hāng-hāng",
+      "type": "AABB",
+      "meaning": "伊的度量不止仔闊，事事項項攏袂計較。",
+      "sentence": "伊的度量不止仔闊，事事項項攏袂計較。",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 92,
+      "hanzi": "胃慒慒",
+      "tailo": "uī tso-tso",
+      "type": "ABB",
+      "meaning": "胃慒慒",
+      "sentence": "胃慒慒",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 93,
+      "hanzi": "疼命命",
+      "tailo": "thiànn-miā-miā",
+      "type": "ABB",
+      "meaning": "非常疼惜。",
+      "sentence": "伊惜囝，惜甲疼命命。",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 94,
+      "hanzi": "仁仁仁",
+      "tailo": "jîn-jîn-jîn/lîn-lîn-lîn",
+      "type": "ABB",
+      "meaning": "我揀的人攏是仁仁仁的。",
+      "sentence": "我揀的人攏是仁仁仁的。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 95,
+      "hanzi": "心慒慒",
+      "tailo": "sim tso-tso",
+      "type": "ABB",
+      "meaning": "心慒慒",
+      "sentence": "心慒慒",
+      "themeColor": "#2D3436"
+    },
+    {
+      "id": 96,
+      "hanzi": "半老老",
+      "tailo": "puànn-ló-lāu",
+      "type": "ABB",
+      "meaning": "食甲半老老才開始學電腦。",
+      "sentence": "食甲半老老才開始學電腦。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 97,
+      "hanzi": "死殗殗",
+      "tailo": "sí-giān-giān",
+      "type": "ABB",
+      "meaning": "死氣沉沉、要死不活。",
+      "sentence": "伊足久無頭路矣，規个人看著死殗殗。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 98,
+      "hanzi": "赤焱焱",
+      "tailo": "tshiah-iānn-iānn",
+      "type": "ABB",
+      "meaning": "日頭赤焱焱，隨人顧性命。",
+      "sentence": "日頭赤焱焱，隨人顧性命。",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 99,
+      "hanzi": "金鑠鑠",
+      "tailo": "kim-siak-siak",
+      "type": "ABB",
+      "meaning": "形容物體的顏色閃閃發亮。",
+      "sentence": "金鑠鑠",
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 100,
+      "hanzi": "氣掣掣",
+      "tailo": "khì-tshuah-tshuah",
+      "type": "ABB",
+      "meaning": "怒氣沖沖。",
+      "sentence": null,
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 101,
+      "hanzi": "笑微微",
+      "tailo": "tshiò-bi-bi",
+      "type": "ABB",
+      "meaning": "這个嬰仔好育飼，閣不時笑微微，古錐甲！",
+      "sentence": "這个嬰仔好育飼，閣不時笑微微，古錐甲！",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 102,
+      "hanzi": "茫茫渺渺",
+      "tailo": "bông-bông-biáu-biáu",
+      "type": "AABB",
+      "meaning": "人生茫茫渺渺，毋知影對佗位來，嘛毋知影對佗位去。",
+      "sentence": "人生茫茫渺渺，毋知影對佗位來，嘛毋知影對佗位去。",
+      "themeColor": "#3A3A3A"
+    },
+    {
+      "id": 103,
+      "hanzi": "爽歪歪",
+      "tailo": "sóng-uainn-uainn",
+      "type": "ABB",
+      "meaning": "𪜶一陣查埔囡仔歇熱有去水上樂園，耍甲爽歪歪。",
+      "sentence": "𪜶一陣查埔囡仔歇熱有去水上樂園，耍甲爽歪歪。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 104,
+      "hanzi": "碎鹽鹽",
+      "tailo": "tshuì-iâm-iâm",
+      "type": "ABB",
+      "meaning": "破碎不堪。形容破碎成顆粒狀或細碎片。",
+      "sentence": null,
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 105,
+      "hanzi": "挨挨陣陣",
+      "tailo": "e-e-tīn-tīn/ue-ue-tīn-tīn",
+      "type": "AABB",
+      "meaning": "五日節舉辦扒龍船比賽，來看鬧熱的民眾挨挨陣陣，人插插插。",
+      "sentence": "五日節舉辦扒龍船比賽，來看鬧熱的民眾挨挨陣陣，人插插插。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 106,
+      "hanzi": "鬧猜猜",
+      "tailo": "nāu-tshai-tshai",
+      "type": "ABB",
+      "meaning": "場面非常熱鬧、熱烈的樣子。",
+      "sentence": "鬧猜猜",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 107,
+      "hanzi": "燒烘烘",
+      "tailo": "sio-hōng-hōng",
+      "type": "ABB",
+      "meaning": "溫度很高、很悶熱，或由於炎症、發燒造成的身體熱度很高。",
+      "sentence": "伊發燒，頭殼摸著燒烘烘。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 108,
+      "hanzi": "燒唿唿",
+      "tailo": "sio-hut-hut",
+      "type": "ABB",
+      "meaning": "熱呼呼、熱騰騰。",
+      "sentence": "包仔拄炊好的，猶燒唿唿。",
+      "themeColor": "#2D3436"
+    },
+    {
+      "id": 109,
+      "hanzi": "龜龜鱉鱉",
+      "tailo": "ku-ku-pih-pih",
+      "type": "AABB",
+      "meaning": "形容個性彆扭，不乾不脆。",
+      "sentence": "這个人客龜龜鱉鱉，買一種物件轉來換三逝。",
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 110,
+      "hanzi": "𣻸塌塌",
+      "tailo": "siûnn-lap-lap",
+      "type": "ABB",
+      "meaning": "非常黏滑、溼滑的樣子。",
+      "sentence": "彼間餐廳，椅桌、塗跤一四界𣻸塌塌，真無衛生。",
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 111,
+      "hanzi": "花貓貓",
+      "tailo": "hue-niau-niau",
+      "type": "ABB",
+      "meaning": "形容顏色花樣多得讓人受不了。",
+      "sentence": "你衫穿甲花貓貓，敢會看口得？",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 112,
+      "hanzi": "花彔彔",
+      "tailo": "hue-lok-lok",
+      "type": "ABB",
+      "meaning": "顏色、花樣多而雜亂。",
+      "sentence": "咱是欲去共恁阿妗送山，你穿甲規身軀花彔彔，敢有合？",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 113,
+      "hanzi": "挐絞絞",
+      "tailo": "jû-ká-ká/lû-ká-ká",
+      "type": "ABB",
+      "meaning": "形容很亂。",
+      "sentence": "伊的一句話予我規个心頭挐絞絞。",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 114,
+      "hanzi": "利劍劍",
+      "tailo": "lāi-kiàm-kiàm",
+      "type": "ABB",
+      "meaning": "這支刀仔利劍劍，細膩，毋通切著手。",
+      "sentence": "這支刀仔利劍劍，細膩，毋通切著手。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 115,
+      "hanzi": "裂獅獅",
+      "tailo": "li̍h-sai-sai",
+      "type": "ABB",
+      "meaning": "𪜶老爸聽著好消息，笑甲喙仔裂獅獅。",
+      "sentence": "𪜶老爸聽著好消息，笑甲喙仔裂獅獅。",
+      "themeColor": "#1A1A2E"
+    },
+    {
+      "id": 116,
+      "hanzi": "放外外",
+      "tailo": "pàng-guā-guā",
+      "type": "ABB",
+      "meaning": "表現出事不關己的樣子。",
+      "sentence": "放外外",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 117,
+      "hanzi": "光焱焱",
+      "tailo": "kng-iānn-iānn",
+      "type": "ABB",
+      "meaning": "明晃晃、光亮。",
+      "sentence": "𪜶兜的電火點甲光焱焱，毋過佇咧外口叫門，煞攏無人應。",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 118,
+      "hanzi": "光爍爍",
+      "tailo": "kng-sih-sih",
+      "type": "ABB",
+      "meaning": "光亮刺眼。",
+      "sentence": "倚晝的日頭光爍爍，照甲目睭強欲擘袂開。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 119,
+      "hanzi": "暗摸摸",
+      "tailo": "àm-bong-bong",
+      "type": "ABB",
+      "meaning": "形容光線不明亮、陰暗漆黑的樣子。",
+      "sentence": "規間厝暗摸摸，你哪會毋開電火？",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 120,
+      "hanzi": "圓棍棍",
+      "tailo": "înn-kùn-kùn",
+      "type": "ABB",
+      "meaning": "身材胖胖的樣子。",
+      "sentence": "這个囡仔生做圓棍棍，肨奶肨奶有夠古錐。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 121,
+      "hanzi": "芳貢貢",
+      "tailo": "phang-kòng-kòng",
+      "type": "ABB",
+      "meaning": "阮兜門口有種一欉月來香，天一下暗就規厝間芳貢貢。",
+      "sentence": "阮兜門口有種一欉月來香，天一下暗就規厝間芳貢貢。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 122,
+      "hanzi": "圓輾輾",
+      "tailo": "înn-liàn-liàn",
+      "type": "ABB",
+      "meaning": "圓滾滾。形容體態或物體形狀非常圓。",
+      "sentence": "你按呢食甲肥朒朒，身軀圓輾輾，愛較捷運動咧喔！",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 123,
+      "hanzi": "食死死",
+      "tailo": "tsia̍h-sí-sí",
+      "type": "ABB",
+      "meaning": "吃定。指人自認深闇對方的個性、習性，即以此對其進行控制，甚至是利用對方來達到自己的目的。",
+      "sentence": "你就是傷過順伊，伊才會共你食死死。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 124,
+      "hanzi": "破糊糊",
+      "tailo": "phuà-kôo-kôo",
+      "type": "ABB",
+      "meaning": "這雙布鞋予狗仔咬甲破糊糊。",
+      "sentence": "這雙布鞋予狗仔咬甲破糊糊。",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 125,
+      "hanzi": "光炎炎",
+      "tailo": "kng-iām-iām",
+      "type": "ABB",
+      "meaning": "形容光亮耀眼、輝煌奪目的樣子。",
+      "sentence": "彼間餐廳的電火點甲光炎炎，煞無幾个人客來交關。",
+      "themeColor": "#3A3A3A"
+    },
+    {
+      "id": 126,
+      "hanzi": "光映映",
+      "tailo": "kng-iànn-iànn",
+      "type": "ABB",
+      "meaning": "形容非常光亮的樣子。",
+      "sentence": "棒球場下昏暗的電火點甲光映映，檢采閣有精彩的比賽通好看矣。",
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 127,
+      "hanzi": "熱翕翕",
+      "tailo": "jua̍h-hip-hip/lua̍h-hip-hip",
+      "type": "ABB",
+      "meaning": "非常悶熱。",
+      "sentence": "熱人下晡，若是熱翕翕閣烏天暗地，連鞭就會落大雨。",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 128,
+      "hanzi": "燒燙燙",
+      "tailo": "sio-thǹg-thǹg",
+      "type": "ABB",
+      "meaning": "溫度很高會燙人。",
+      "sentence": "火鍋湯燒燙燙，若欲啉著愛細膩。",
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 129,
+      "hanzi": "青蘢蘢",
+      "tailo": "tshenn-lìng-lìng/tshinn-lìng-lìng",
+      "type": "ABB",
+      "meaning": "形容草木蒼翠欲滴的樣子。",
+      "sentence": "雨若落會齊勻，山頭的柴樹仔看著就青蘢蘢。",
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 130,
+      "hanzi": "烏汁汁",
+      "tailo": "oo-tsiap-tsiap",
+      "type": "ABB",
+      "meaning": "又黑又髒。",
+      "sentence": "烏汁汁",
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 131,
+      "hanzi": "激皮皮",
+      "tailo": "kik-phî-phî",
+      "type": "ABB",
+      "meaning": "不在乎，不知羞恥的樣子。",
+      "sentence": "伊逐項代誌攏激皮皮，毋驚人共伊笑。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 132,
+      "hanzi": "激槌槌",
+      "tailo": "kik-thuî-thuî",
+      "type": "ABB",
+      "meaning": "裝傻。",
+      "sentence": "激槌槌",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 133,
+      "hanzi": "韌布布",
+      "tailo": "jūn-pòo-pòo/lūn-pòo-pòo",
+      "type": "ABB",
+      "meaning": "這塊豬母肉韌布布，毋但僫哺閣強欲吞袂落去。",
+      "sentence": "這塊豬母肉韌布布，毋但僫哺閣強欲吞袂落去。",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 134,
+      "hanzi": "徛騰騰",
+      "tailo": "khiā-thîng-thîng",
+      "type": "ABB",
+      "meaning": "軍中的班長號令落去，所有的阿兵哥攏徛騰騰。",
+      "sentence": "軍中的班長號令落去，所有的阿兵哥攏徛騰騰。",
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 135,
+      "hanzi": "親戽戽",
+      "tailo": "tshin-hòo-hòo",
+      "type": "ABB",
+      "meaning": "熟似親密狀、熱絡狀。",
+      "sentence": "𪜶兩个一下見面就表現甲親戽戽，毋知是咧搬佗一齣？",
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 136,
+      "hanzi": "輕蠓蠓",
+      "tailo": "khin-báng-báng",
+      "type": "ABB",
+      "meaning": "形容非常的輕。",
+      "sentence": "這領被輕蠓蠓，毋過蓋著閣誠燒。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 137,
+      "hanzi": "花嗄嗄",
+      "tailo": "hue-sà-sà",
+      "type": "ABB",
+      "meaning": "混亂不清。比喻頭腦裡朦朧一片，無法明白。",
+      "sentence": "聽你講甲親像誠簡單，我是聽甲花嗄嗄。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 138,
+      "hanzi": "重篤篤",
+      "tailo": "tāng-tauh-tauh",
+      "type": "ABB",
+      "meaning": "黃金博物館彼塊金仔角重篤篤，到今猶無人搬會振動得。",
+      "sentence": "黃金博物館彼塊金仔角重篤篤，到今猶無人搬會振動得。",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 139,
+      "hanzi": "恬喌喌",
+      "tailo": "tiām-tsiuh-tsiuh",
+      "type": "ABB",
+      "meaning": "寂靜、鴉雀無聲。",
+      "sentence": "頭家若受氣起來，員工就攏恬喌喌出在伊罵。",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 140,
+      "hanzi": "實捅捅",
+      "tailo": "tsa̍t-thóng-thóng",
+      "type": "ABB",
+      "meaning": "形容人或物塞得極滿，毫無空隙。",
+      "sentence": "咧欲過年矣，店頭的貨排甲實捅捅！",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 141,
+      "hanzi": "平波波",
+      "tailo": "pênn-pho-pho/pînn-pho-pho",
+      "type": "ABB",
+      "meaning": "平坦。",
+      "sentence": "山跤規大片攏是平波波的田洋。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 142,
+      "hanzi": "刺夯夯",
+      "tailo": "tshì-giâ-giâ",
+      "type": "ABB",
+      "meaning": "形容咄咄逼人、張牙舞爪的樣子。",
+      "sentence": "咱佮人鬥陣，若是講著話就刺夯夯，定定會去得失人。",
+      "themeColor": "#1A1A2E"
+    },
+    {
+      "id": 143,
+      "hanzi": "粗耙耙",
+      "tailo": "tshoo-pê-pê",
+      "type": "ABB",
+      "meaning": "阿母的手做粗重，閣欠保養，皮膚變甲粗耙耙。",
+      "sentence": "阿母的手做粗重，閣欠保養，皮膚變甲粗耙耙。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 144,
+      "hanzi": "散掖掖",
+      "tailo": "suànn-iā-iā",
+      "type": "ABB",
+      "meaning": "散亂。",
+      "sentence": "物件用了愛囥轉去原位，才袂一四界散掖掖。",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 145,
+      "hanzi": "魚魚肉肉",
+      "tailo": "hî-hî-bah-bah/hû-hû-bah-bah",
+      "type": "AABB",
+      "meaning": "大魚大肉。指主要以魚、肉為主的菜餚。",
+      "sentence": "三頓魚魚肉肉按呢咧食，對健康無一定真有幫贊。",
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 146,
+      "hanzi": "爛朽朽",
+      "tailo": "nuā-hiú-hiú",
+      "type": "ABB",
+      "meaning": "破破爛爛。",
+      "sentence": "彼間厝真久無人蹛矣，厝頂早就爛朽朽矣！",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 147,
+      "hanzi": "襤襤褸褸",
+      "tailo": "lâm-lâm-luì-luì",
+      "type": "AABB",
+      "meaning": "彼个乞食一身軀穿甲襤襤褸褸，予人看著真袂過心。",
+      "sentence": "彼个乞食一身軀穿甲襤襤褸褸，予人看著真袂過心。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 148,
+      "hanzi": "老太太",
+      "tailo": "lāu-thài-thài",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#533483"
+    },
+    {
+      "id": 149,
+      "hanzi": "家家戶戶",
+      "tailo": "ke-ke-hōo-hōo",
+      "type": "AABB",
+      "meaning": "二九暝家家戶戶攏咧圍爐。",
+      "sentence": "二九暝家家戶戶攏咧圍爐。",
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 150,
+      "hanzi": "輕輕鬆鬆",
+      "tailo": "khin-khin-sang-sang",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 151,
+      "hanzi": "點點滴滴",
+      "tailo": "tiám-tiám-tih-tih",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 152,
+      "hanzi": "風風雨雨",
+      "tailo": "hong-hong-ú-ú",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 153,
+      "hanzi": "少奶奶",
+      "tailo": "siáu-nái-nái",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 154,
+      "hanzi": "𣻸捋捋",
+      "tailo": "siûnn-luah-luah",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 155,
+      "hanzi": "口口聲聲",
+      "tailo": "",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 156,
+      "hanzi": "兇兇狂狂",
+      "tailo": "",
+      "type": "AABB",
+      "meaning": "人講：「食緊挵破碗。」做代誌毋好按呢兇兇狂狂，著先想予較斟酌咧才來做。",
+      "sentence": "人講：「食緊挵破碗。」做代誌毋好按呢兇兇狂狂，著先想予較斟酌咧才來做。",
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 157,
+      "hanzi": "紅朱朱",
+      "tailo": "",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 158,
+      "hanzi": "紅帕帕",
+      "tailo": "",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 159,
+      "hanzi": "烏沁沁",
+      "tailo": "",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 160,
+      "hanzi": "狹櫼櫼",
+      "tailo": "e̍h-tsinn-tsinn/ue̍h-tsinn-tsinn",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 161,
+      "hanzi": "笑咪咪",
+      "tailo": "",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3A3A3A"
+    },
+    {
+      "id": 162,
+      "hanzi": "暗墨墨",
+      "tailo": "àm-ba̍k-ba̍k",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 163,
+      "hanzi": "碎溶溶",
+      "tailo": "tshuì-iûnn-iûnn",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 164,
+      "hanzi": "瘦疕疕",
+      "tailo": "sán-phí-phí",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 165,
+      "hanzi": "彎彎曲曲",
+      "tailo": "",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 166,
+      "hanzi": "暗挲挲",
+      "tailo": "àm-so-so",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2D3436"
+    },
+    {
+      "id": 167,
+      "hanzi": "準準準",
+      "tailo": "",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 168,
+      "hanzi": "死翹翹",
+      "tailo": "",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 169,
+      "hanzi": "金閃閃",
+      "tailo": "kim-siám-siám",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 170,
+      "hanzi": "金爍爍",
+      "tailo": "kim-sih-sih",
+      "type": "ABB",
+      "meaning": "皮鞋推甲金爍爍。",
+      "sentence": "皮鞋推甲金爍爍。",
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 171,
+      "hanzi": "笑吻吻",
+      "tailo": "tshiò-bún-bún",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 172,
+      "hanzi": "殘殘脆脆",
+      "tailo": "",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 173,
+      "hanzi": "挨挨𤲍𤲍",
+      "tailo": "e-e-kheh-kheh/ue-ue-khueh-khueh",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 174,
+      "hanzi": "綿綿精精",
+      "tailo": "mî-mî-tsinn-tsinn",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 175,
+      "hanzi": "𣻸肭肭",
+      "tailo": "siûnn-leh-leh",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 176,
+      "hanzi": "放放放",
+      "tailo": "pàng-hòng-hòng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 177,
+      "hanzi": "圓捙捙",
+      "tailo": "înn-tshia-tshia",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 178,
+      "hanzi": "圓輪輪",
+      "tailo": "înn-lin-lin",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 179,
+      "hanzi": "芳衝衝",
+      "tailo": "phang-tshìng-tshìng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4A4A4A"
+    },
+    {
+      "id": 180,
+      "hanzi": "光龐龐",
+      "tailo": "kng-phiāng-phiāng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 181,
+      "hanzi": "熱篤篤",
+      "tailo": "jua̍h-ta̍k-ta̍k/lua̍h-ta̍k-ta̍k",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 182,
+      "hanzi": "日晝晝",
+      "tailo": "ji̍t-tàu-tàu/li̍t-tàu-tàu",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 183,
+      "hanzi": "白死死",
+      "tailo": "pe̍h-sí-sí",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3A3A3A"
+    },
+    {
+      "id": 184,
+      "hanzi": "烏嘛嘛",
+      "tailo": "oo-mà-mà",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 185,
+      "hanzi": "烏貓貓",
+      "tailo": "oo-niau-niau",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 186,
+      "hanzi": "烏鬼鬼",
+      "tailo": "oo-kuí-kuí",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 187,
+      "hanzi": "久久長長",
+      "tailo": "kú-kú-tn̂g-tn̂g",
+      "type": "AABB",
+      "meaning": "人講：「歹船拄著好港路。」這擺代誌做了順序，不過是一時的好運，咱著愛繼續培養實力，才有法度久久長長，應付各種的挑戰。",
+      "sentence": "人講：「歹船拄著好港路。」這擺代誌做了順序，不過是一時的好運，咱著愛繼續培養實力，才有法度久久長長，應付各種的挑戰。",
+      "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 188,
+      "hanzi": "圓翱翱",
+      "tailo": "înn-kō-kō",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 189,
+      "hanzi": "脆屑屑",
+      "tailo": "tshè-sap-sap",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#533483"
+    },
+    {
+      "id": 190,
+      "hanzi": "激恬恬",
+      "tailo": "kik-tiām-tiām",
+      "type": "ABB",
+      "meaning": "逐家毋通激恬恬，欲抑毋，恁嘛喝聲一下。",
+      "sentence": "逐家毋通激恬恬，欲抑毋，恁嘛喝聲一下。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 191,
+      "hanzi": "平坦坦",
+      "tailo": "pênn-thánn-thánn/pînn-thánn-thánn",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#533483"
+    },
+    {
+      "id": 192,
+      "hanzi": "平溜溜",
+      "tailo": "pênn-liu-liu/pînn-liu-liu",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C3E50"
+    },
+    {
+      "id": 193,
+      "hanzi": "張張掣掣",
+      "tailo": "tiunn-tiunn-tshuah-tshuah",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 194,
+      "hanzi": "花膏膏",
+      "tailo": "hue-kô-kô",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 195,
+      "hanzi": "勼勼凹凹",
+      "tailo": "kiu-kiu-neh-neh",
+      "type": "AABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 196,
+      "hanzi": "花囉囉",
+      "tailo": "hue-lo-lo",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 197,
+      "hanzi": "慢吞吞",
+      "tailo": "bān-thun-thun",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#16213E"
+    },
+    {
+      "id": 198,
+      "hanzi": "坱蓬蓬",
+      "tailo": "ing-phōng-phōng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 199,
+      "hanzi": "歹衝衝",
+      "tailo": "pháinn-tshìng-tshìng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 200,
+      "hanzi": "歹鬼鬼",
+      "tailo": "pháinn-kuí-kuí",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 201,
+      "hanzi": "恬卒卒",
+      "tailo": "tiām-tsut-tsut",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#2C2C54"
+    },
+    {
+      "id": 202,
+      "hanzi": "粗煏煏",
+      "tailo": "tshoo-piak-piak",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#1F1F1F"
+    },
+    {
+      "id": 203,
+      "hanzi": "粗柏柏",
+      "tailo": "tshoo-peh-peh",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 204,
+      "hanzi": "魚肉肉",
+      "tailo": "hî-hi̍k-bah",
+      "type": "ABB",
+      "meaning": "三頓魚魚肉肉按呢咧食，對健康無一定真有幫贊。",
+      "sentence": "三頓魚魚肉肉按呢咧食，對健康無一定真有幫贊。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 205,
+      "hanzi": "金爁爁",
+      "tailo": "kim-nà-nà",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#1A1A2E"
+    },
+    {
+      "id": 206,
+      "hanzi": "光閃閃",
+      "tailo": "kng-siám-siám",
+      "type": "ABB",
+      "meaning": "金光閃閃",
+      "sentence": "金光閃閃",
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 207,
+      "hanzi": "緊迸迸",
+      "tailo": "kín-piàng-piàng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 208,
+      "hanzi": "趕迸迸",
+      "tailo": "kuánn-piàng-piàng",
+      "type": "ABB",
+      "meaning": "（待補充）",
+      "sentence": null,
+      "themeColor": "#16213E"
     }
   ]
 }
