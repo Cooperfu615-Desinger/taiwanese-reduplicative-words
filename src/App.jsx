@@ -43,6 +43,11 @@ function App() {
 
       {/* Main Content */}
       <div className="min-h-screen w-full font-sans relative flex flex-col items-center justify-center px-4 py-8">
+        {/* Title at top center */}
+        <h1 className="fixed top-6 left-0 right-0 text-center text-text text-lg font-semibold tracking-[0.3em]">
+          台語疊字聲韻
+        </h1>
+
         {/* Central Card */}
         <CentralCard
           word={currentWord}
@@ -50,14 +55,12 @@ function App() {
           onShare={handleShare}
         />
 
-        {/* Title below card */}
-        <h1 className="mt-8 text-text text-lg font-semibold tracking-[0.3em]">
-          台語疊字聲韻
-        </h1>
-
-        {/* Copyright at bottom */}
+        {/* Footer at bottom */}
         <footer className="fixed bottom-4 left-0 right-0 text-center">
-          <span className="text-muted/50 text-[10px] tracking-wider">
+          <p className="text-black text-[10px] tracking-wider mb-1">
+            資料來源：教育部臺灣台語常用詞辭典
+          </p>
+          <span className="text-gray-500 text-[10px] tracking-wider">
             CREATED BY VIBE QUIRK LABS
           </span>
         </footer>
