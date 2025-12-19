@@ -34,20 +34,35 @@ function cleanWord(text) {
         .trim();
 }
 
-// 判斷 ABB 或 AABB
+// 判斷疊字結構：ABB, AAB, AABB, ABAB
 function isReduplicativeWord(word) {
     if (!word || word.length < 2) return false;
     const chars = [...word];
     const len = chars.length;
 
-    // ABB：3字，後兩字同
+    // === 3字結構 ===
+
+    // ABB：後兩字相同 (如：紅記記、冷吱吱)
     if (len === 3 && chars[1] === chars[2]) {
         return { type: 'ABB', word };
     }
 
-    // AABB：4字，前兩字同 + 後兩字同
+    // AAB：前兩字相同 (如：慢慢仔、好好仔)
+    if (len === 3 && chars[0] === chars[1]) {
+        return { type: 'AAB', word };
+    }
+
+    // === 4字結構 ===
+
+    // AABB：前兩字同 + 後兩字同 (如：歡歡喜喜、平平安安)
     if (len === 4 && chars[0] === chars[1] && chars[2] === chars[3]) {
         return { type: 'AABB', word };
+    }
+
+    // ABAB：AB 重複 (如：來去來去、反反覆覆)
+    // 注意：chars[0]==chars[2] 且 chars[1]==chars[3]
+    if (len === 4 && chars[0] === chars[2] && chars[1] === chars[3]) {
+        return { type: 'ABAB', word };
     }
 
     return false;
@@ -126,11 +141,13 @@ function main() {
     console.log(`   共 ${allSentences.length} 筆例句`);
 
     // ========== 處理詞目，過濾疊字 ==========
-    console.log('\n🔍 過濾 ABB/AABB 疊字結構...');
+    console.log('\n🔍 過濾 ABB/AAB/AABB/ABAB 疊字結構...');
 
     const results = [];
     let abbCount = 0;
+    let aabCount = 0;
     let aabbCount = 0;
+    let ababCount = 0;
     let withDefinition = 0;
     let withSentence = 0;
 
@@ -146,7 +163,9 @@ function main() {
         if (!reduplication) continue;
 
         if (reduplication.type === 'ABB') abbCount++;
+        if (reduplication.type === 'AAB') aabCount++;
         if (reduplication.type === 'AABB') aabbCount++;
+        if (reduplication.type === 'ABAB') ababCount++;
 
         // 取得釋義
         let definition = definitionMap.get(hanzi) || null;
@@ -177,7 +196,9 @@ function main() {
     // ========== 輸出統計 ==========
     console.log('\n📊 統計結果:');
     console.log(`   • ABB 結構: ${abbCount} 筆`);
+    console.log(`   • AAB 結構: ${aabCount} 筆`);
     console.log(`   • AABB 結構: ${aabbCount} 筆`);
+    console.log(`   • ABAB 結構: ${ababCount} 筆`);
     console.log(`   • 總計疊字詞: ${results.length} 筆`);
     console.log(`   • 有釋義: ${withDefinition} 筆`);
     console.log(`   • 有例句: ${withSentence} 筆`);
