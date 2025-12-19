@@ -12,10 +12,10 @@
     will-change: transform, opacity;
 }
 
-/* ===== 大型粒子 (70px) ===== */
+/* ===== 大型粒子 (40px) ===== */
 .particle-1 {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     top: 10%;
     left: 5%;
     animation: float1 8s ease-in-out infinite, pulse 4s ease-in-out infinite;
@@ -23,8 +23,8 @@
 }
 
 .particle-2 {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     top: 50%;
     right: 8%;
     animation: float2 8.5s ease-in-out infinite, pulse 4.2s ease-in-out infinite 0.5s;
@@ -32,8 +32,8 @@
 }
 
 .particle-3 {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     bottom: 20%;
     left: 15%;
     animation: float3 7.8s ease-in-out infinite, pulse 4.5s ease-in-out infinite 1s;
@@ -41,18 +41,18 @@
 }
 
 .particle-4 {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     top: 30%;
     left: 60%;
     animation: float4 8.2s ease-in-out infinite, pulse 3.8s ease-in-out infinite 1.5s;
     --base-opacity: 0.23;
 }
 
-/* ===== 中型粒子 (50px) ===== */
+/* ===== 中型粒子 (30px) ===== */
 .particle-5 {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     top: 20%;
     right: 20%;
     animation: float5 10s ease-in-out infinite, pulse 5s ease-in-out infinite;
@@ -60,8 +60,8 @@
 }
 
 .particle-6 {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     top: 65%;
     left: 10%;
     animation: float1 10.5s ease-in-out infinite, pulse 5.2s ease-in-out infinite 0.8s;
@@ -69,8 +69,8 @@
 }
 
 .particle-7 {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     bottom: 35%;
     right: 5%;
     animation: float2 9.5s ease-in-out infinite, pulse 4.8s ease-in-out infinite 1.2s;
@@ -78,18 +78,18 @@
 }
 
 .particle-8 {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     top: 45%;
     left: 35%;
     animation: float3 10.2s ease-in-out infinite, pulse 5.5s ease-in-out infinite 2s;
     --base-opacity: 0.22;
 }
 
-/* ===== 小型粒子 (30px) ===== */
+/* ===== 小型粒子 (20px) ===== */
 .particle-9 {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     top: 15%;
     left: 40%;
     animation: float4 7s ease-in-out infinite, pulse 3.5s ease-in-out infinite;
@@ -97,8 +97,8 @@
 }
 
 .particle-10 {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     top: 55%;
     right: 30%;
     animation: float5 7.5s ease-in-out infinite, pulse 3.8s ease-in-out infinite 0.5s;
@@ -106,8 +106,8 @@
 }
 
 .particle-11 {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     bottom: 25%;
     left: 50%;
     animation: float1 6.8s ease-in-out infinite, pulse 4s ease-in-out infinite 1s;
@@ -115,18 +115,18 @@
 }
 
 .particle-12 {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     top: 75%;
     right: 45%;
     animation: float2 7.2s ease-in-out infinite, pulse 3.2s ease-in-out infinite 1.5s;
     --base-opacity: 0.3;
 }
 
-/* ===== 微型粒子 (20px) ===== */
+/* ===== 微型粒子 (10px) ===== */
 .particle-13 {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     top: 25%;
     left: 25%;
     animation: float3 9s ease-in-out infinite, pulse 4.5s ease-in-out infinite;
@@ -134,8 +134,8 @@
 }
 
 .particle-14 {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     top: 40%;
     right: 15%;
     animation: float4 9.5s ease-in-out infinite, pulse 4.8s ease-in-out infinite 0.7s;
@@ -143,8 +143,8 @@
 }
 
 .particle-15 {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     bottom: 40%;
     left: 70%;
     animation: float5 8.5s ease-in-out infinite, pulse 4.2s ease-in-out infinite 1.3s;
@@ -152,49 +152,49 @@
 }
 
 .particle-16 {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     top: 80%;
     left: 30%;
     animation: float1 9.2s ease-in-out infinite, pulse 5s ease-in-out infinite 2s;
     --base-opacity: 0.35;
 }
 
-/* ===== 極小粒子 (10px) ===== */
+/* ===== 極小粒子 (5px) ===== */
 .particle-17 {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     top: 12%;
     right: 35%;
     animation: float2 11s ease-in-out infinite, pulse 5.5s ease-in-out infinite;
-    --base-opacity: 0.45;
-}
-
-.particle-18 {
-    width: 10px;
-    height: 10px;
-    top: 35%;
-    left: 8%;
-    animation: float3 11.5s ease-in-out infinite, pulse 5.8s ease-in-out infinite 0.6s;
     --base-opacity: 0.5;
 }
 
+.particle-18 {
+    width: 5px;
+    height: 5px;
+    top: 35%;
+    left: 8%;
+    animation: float3 11.5s ease-in-out infinite, pulse 5.8s ease-in-out infinite 0.6s;
+    --base-opacity: 0.55;
+}
+
 .particle-19 {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     bottom: 15%;
     right: 25%;
     animation: float4 10.5s ease-in-out infinite, pulse 5.2s ease-in-out infinite 1.2s;
-    --base-opacity: 0.48;
+    --base-opacity: 0.52;
 }
 
 .particle-20 {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     top: 60%;
     left: 55%;
     animation: float5 11.2s ease-in-out infinite, pulse 6s ease-in-out infinite 1.8s;
-    --base-opacity: 0.42;
+    --base-opacity: 0.48;
 }
 
 /* ===== 漂浮動畫 ===== */
