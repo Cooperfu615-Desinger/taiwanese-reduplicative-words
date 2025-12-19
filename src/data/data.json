@@ -2654,6 +2654,150 @@
       "meaning": "（待補充）",
       "sentence": null,
       "themeColor": "#3C3C3C"
+    },
+    {
+      "id": 296,
+      "hanzi": "起落起落",
+      "tailo": "khí-lo̍h-khí-lo̍h",
+      "type": "ABAB",
+      "meaning": "上上下下、起起落落。形容反覆升降或情緒波動。",
+      "sentence": "人生就是按呢起落起落，毋免傷掛意。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 297,
+      "hanzi": "出入出入",
+      "tailo": "tshut-ji̍p-tshut-ji̍p",
+      "type": "ABAB",
+      "meaning": "進進出出。形容頻繁進出某處。",
+      "sentence": "伊規工佇厝出入出入，袂曉咧創啥。",
+      "themeColor": "#0F3460"
+    },
+    {
+      "id": 298,
+      "hanzi": "行來行去",
+      "tailo": "kiânn-lâi-kiânn-khì",
+      "type": "ABAB",
+      "meaning": "走來走去。形容反覆來回走動。",
+      "sentence": "阿公佇庭院行來行去，想欲揣伊的柺仔。",
+      "themeColor": "#1E272E"
+    },
+    {
+      "id": 299,
+      "hanzi": "看來看去",
+      "tailo": "khuànn-lâi-khuànn-khì",
+      "type": "ABAB",
+      "meaning": "看來看去。形容反覆觀看比較。",
+      "sentence": "伊佇店仔看來看去，揀無欲買佗一領衫。",
+      "themeColor": "#3D3D3D"
+    },
+    {
+      "id": 300,
+      "hanzi": "講來講去",
+      "tailo": "kóng-lâi-kóng-khì",
+      "type": "ABAB",
+      "meaning": "說來說去。形容反覆討論同一件事。",
+      "sentence": "講來講去攏是遐的話，無較新的意見。",
+      "themeColor": "#5D4E60"
+    },
+    {
+      "id": 301,
+      "hanzi": "想來想去",
+      "tailo": "siūnn-lâi-siūnn-khì",
+      "type": "ABAB",
+      "meaning": "想來想去。形容反覆思考。",
+      "sentence": "我想來想去，猶原決定愛去。",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 302,
+      "hanzi": "走來走去",
+      "tailo": "tsáu-lâi-tsáu-khì",
+      "type": "ABAB",
+      "meaning": "跑來跑去。形容到處奔走。",
+      "sentence": "囡仔佇外口走來走去，無愛入來食飯。",
+      "themeColor": "#474787"
+    },
+    {
+      "id": 303,
+      "hanzi": "飛來飛去",
+      "tailo": "pue-lâi-pue-khì",
+      "type": "ABAB",
+      "meaning": "飛來飛去。形容飛翔來回。",
+      "sentence": "鳥仔佇樹仔頂飛來飛去，真好耍。",
+      "themeColor": "#2B2B2B"
+    },
+    {
+      "id": 304,
+      "hanzi": "坐來坐去",
+      "tailo": "tsē-lâi-tsē-khì",
+      "type": "ABAB",
+      "meaning": "坐一下又換位置。形容坐不住、焦躁不安。",
+      "sentence": "伊真無耐性，攏咧坐來坐去。",
+      "themeColor": "#4A0E4E"
+    },
+    {
+      "id": 305,
+      "hanzi": "搬來搬去",
+      "tailo": "puann-lâi-puann-khì",
+      "type": "ABAB",
+      "meaning": "搬來搬去。形容頻繁搬動位置。",
+      "sentence": "彼張椅仔予伊搬來搬去，害到規間厝亂操操。",
+      "themeColor": "#3A3A3A"
+    },
+    {
+      "id": 306,
+      "hanzi": "翻來翻去",
+      "tailo": "huan-lâi-huan-khì",
+      "type": "ABAB",
+      "meaning": "翻來翻去。形容反覆翻動或睡不著。",
+      "sentence": "暗時睏袂去，攏咧翻來翻去。",
+      "themeColor": "#2F4F4F"
+    },
+    {
+      "id": 307,
+      "hanzi": "問來問去",
+      "tailo": "mn̄g-lâi-mn̄g-khì",
+      "type": "ABAB",
+      "meaning": "問來問去。形容反覆詢問。",
+      "sentence": "伊問來問去，攏是仝款的問題。",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 308,
+      "hanzi": "細細聲",
+      "tailo": "sè-sè-siann",
+      "type": "AAB",
+      "meaning": "小小聲、輕聲細語。",
+      "sentence": "你細細聲講，毋通吵著人。",
+      "themeColor": "#4B3832"
+    },
+    {
+      "id": 309,
+      "hanzi": "大大聲",
+      "tailo": "tuā-tuā-siann",
+      "type": "AAB",
+      "meaning": "大聲地、高聲地。",
+      "sentence": "伊大大聲叫，逐家攏聽著。",
+      "themeColor": "#34495E"
+    },
+    {
+      "id": 310,
+      "hanzi": "緊緊去",
+      "tailo": "kín-kín-khì",
+      "type": "AAB",
+      "meaning": "趕快去。催促快點行動。",
+      "sentence": "時間袂赴矣，緊緊去！",
+      "themeColor": "#533483"
+    },
+    {
+      "id": 311,
+      "hanzi": "靜靜仔",
+      "tailo": "tsīng-tsīng-á",
+      "type": "AAB",
+      "meaning": "靜靜地、安安靜靜。",
+      "sentence": "你靜靜仔坐，毋通搐動。",
+      "themeColor": "#474787"
     }
   ]
 }
