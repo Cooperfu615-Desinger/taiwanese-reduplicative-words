@@ -33,13 +33,12 @@ export function CentralCard({ word, onShuffle, onShare }) {
         <div
             className="
                 relative
-                w-full max-w-[360px] 
-                min-h-[580px] max-h-[85vh]
-                aspect-[9/16]
                 rounded-3xl
                 overflow-hidden
             "
             style={{
+                width: '350px',
+                height: '580px',
                 backgroundColor: `${word.themeColor}CC`, // 80% 透明度
                 backgroundBlendMode: 'overlay',
                 boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
@@ -109,7 +108,7 @@ export function CentralCard({ word, onShuffle, onShare }) {
                                 style={{
                                     writingMode: 'vertical-rl',
                                     textOrientation: 'upright',
-                                    fontSize: 'clamp(4rem, 14vw, 5.5rem)',
+                                    fontSize: '5rem',
                                     letterSpacing: letterSpacing,
                                     textShadow: textShadowStrong,
                                 }}
