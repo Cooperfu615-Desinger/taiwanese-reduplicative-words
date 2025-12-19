@@ -99,41 +99,46 @@ export function CentralCard({ word, onShuffle, onShare }) {
 
                 {/* Main Content Area - 所有元素置頂對齊 */}
                 <div className="flex-1 flex items-start justify-center gap-2 py-6">
-                    {/* 漢字 + 台羅 組（靠近） */}
-                    <div className="flex items-start gap-1" style={{ height: '320px' }}>
-                        {/* Main Hanzi - Vertical */}
-                        <h1
-                            className="text-white font-semibold leading-[0.9] select-none"
-                            style={{
-                                writingMode: 'vertical-rl',
-                                textOrientation: 'upright',
-                                fontSize: 'clamp(4rem, 14vw, 5.5rem)',
-                                letterSpacing: letterSpacing,
-                                textShadow: textShadowStrong,
-                            }}
-                        >
-                            {word.hanzi}
-                        </h1>
+                    {/* 漢字 + 台羅 + 播放按鈕 組 */}
+                    <div className="flex flex-col items-center" style={{ height: '320px' }}>
+                        {/* 漢字 + 台羅 橫向排列 */}
+                        <div className="flex items-start gap-1 flex-1">
+                            {/* Main Hanzi - Vertical */}
+                            <h1
+                                className="text-white font-semibold leading-[0.9] select-none"
+                                style={{
+                                    writingMode: 'vertical-rl',
+                                    textOrientation: 'upright',
+                                    fontSize: 'clamp(4rem, 14vw, 5.5rem)',
+                                    letterSpacing: letterSpacing,
+                                    textShadow: textShadowStrong,
+                                }}
+                            >
+                                {word.hanzi}
+                            </h1>
 
-                        {/* Tailo - Vertical (緊跟漢字) */}
-                        <span
-                            className="text-white/80 text-sm font-medium tracking-wide whitespace-nowrap"
-                            style={{
-                                writingMode: 'vertical-rl',
-                                textShadow,
-                            }}
-                        >
-                            {word.tailo}
-                        </span>
+                            {/* Tailo - Vertical (緊跟漢字) */}
+                            <span
+                                className="text-white/80 text-sm font-medium tracking-wide whitespace-nowrap"
+                                style={{
+                                    writingMode: 'vertical-rl',
+                                    textShadow,
+                                }}
+                            >
+                                {word.tailo}
+                            </span>
+                        </div>
 
-                        {/* 播放按鈕 - 有音檔時顯示 */}
+                        {/* 播放按鈕 - 在台羅正下方 */}
                         {word.audioPath && (
                             <button
                                 onClick={() => {
-                                    const audio = new Audio(word.audioPath);
+                                    // 使用相對路徑（去掉開頭的 /），讓 Vite 的 base 設定自動處理
+                                    const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
+                                    const audio = new Audio(audioUrl);
                                     audio.play().catch(err => console.log('Audio play error:', err));
                                 }}
-                                className="mt-2 p-2 text-white/60 hover:text-white/90 transition-colors"
+                                className="mt-3 p-2 text-white/60 hover:text-white/90 transition-colors rounded-full hover:bg-white/10"
                                 style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.3))' }}
                                 aria-label="播放發音"
                             >
