@@ -1,8 +1,9 @@
 /**
- * CentralCard - 固定尺寸版本 + 增強對比度
+ * CentralCard - 高質感通透版本
  * 1. 固定卡片尺寸確保視覺穩定
- * 2. 內層遮罩增強對比
- * 3. 文字陰影提升可讀性
+ * 2. 降低背景透明度讓流動光影透出
+ * 3. 混合模式增加層次感
+ * 4. 主題色陰影產生發光效果
  */
 export function CentralCard({ word, onShuffle, onShare }) {
     // 根據字數調整字間距，確保視覺重心一致
@@ -13,6 +14,19 @@ export function CentralCard({ word, onShuffle, onShare }) {
     const textShadow = '0 2px 4px rgba(0,0,0,0.3)';
     const textShadowStrong = '0 2px 8px rgba(0,0,0,0.5)';
 
+    // 從 themeColor 提取 RGB 用於陰影
+    const hexToRgb = (hex) => {
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : { r: 0, g: 0, b: 0 };
+    };
+
+    const rgb = hexToRgb(word.themeColor);
+    const themeColorShadow = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.4)`;
+
     return (
         <div
             className="
@@ -22,16 +36,20 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 aspect-[9/16]
                 rounded-3xl
                 overflow-hidden
+                backdrop-blur-md
             "
             style={{
-                backgroundColor: word.themeColor,
+                backgroundColor: `${word.themeColor}CC`, // 80% 透明度
+                backgroundBlendMode: 'overlay',
+                boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
             }}
         >
-            {/* 內層遮罩 - 增強對比度 */}
+            {/* 內層微遮罩 - 輕微增強對比但保持通透 */}
             <div
-                className="absolute inset-0 bg-black/15 backdrop-blur-sm"
+                className="absolute inset-0"
                 style={{
-                    background: 'linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.15) 100%)'
+                    background: 'linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.05) 100%)',
+                    backdropFilter: 'blur(1px)',
                 }}
             />
 
