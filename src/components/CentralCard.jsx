@@ -197,7 +197,7 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 </div>
 
                 {/* Separator Line */}
-                <div className="shrink-0 w-full h-px bg-white/30 mb-4" />
+                <div className="shrink-0 w-full h-px bg-white/30" style={{ marginBottom: '13px' }} />
 
                 {/* Action Bar - 固定在最底部 */}
                 <div className="shrink-0 flex gap-3">
