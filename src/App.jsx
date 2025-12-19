@@ -45,60 +45,48 @@ function App() {
       {/* Animated Mesh Gradient Background */}
       <AmbientBackground />
 
-      {/* Main Content */}
-      <div className={`min-h-screen w-full font-sans relative flex flex-col items-center px-4 py-8 ${showLicense ? '' : 'justify-center'}`}>
+      {/* Main Content - 所有模式都隨頁面滾動 */}
+      <div className="min-h-screen w-full font-sans relative flex flex-col items-center px-4 py-6">
+
+        {/* 標題 - 非固定定位，隨頁面滾動 */}
+        <h1 className="text-center text-text text-lg font-semibold tracking-[0.3em] pt-2 pb-4">
+          台語疊字聲韻
+        </h1>
 
         {/* 條件渲染：卡片模式 vs 版權頁面模式 */}
         {showLicense ? (
-          // ===== 版權宣告頁面模式 - 標題和底部隨頁面滾動 =====
-          <div className="w-full animate-fadeIn">
-            {/* 標題 - 非固定定位，隨頁面滾動 */}
-            <h1 className="text-center text-text text-lg font-semibold tracking-[0.3em] pt-4 pb-6">
-              台語疊字聲韻
-            </h1>
-
-            {/* 版權頁面內容 */}
+          // ===== 版權宣告頁面模式 =====
+          <div className="w-full flex-1 animate-fadeIn">
             <LicensePage onClose={() => setShowLicense(false)} />
-
-            {/* 底部 - 非固定定位，隨頁面滾動 */}
-            <footer className="text-center py-8">
-              <span className="text-gray-500 text-[10px] tracking-wider">
-                CREATED BY VIBE QUIRK LABS
-              </span>
-            </footer>
           </div>
         ) : (
-          // ===== 卡片模式 - 標題和底部固定 =====
-          <>
-            {/* 標題 - 固定在頂部 */}
-            <h1 className="fixed top-6 left-0 right-0 text-center text-text text-lg font-semibold tracking-[0.3em] z-20">
-              台語疊字聲韻
-            </h1>
+          // ===== 卡片模式 =====
+          <div className="flex-1 flex items-center justify-center animate-fadeIn">
+            <CentralCard
+              word={currentWord}
+              onShuffle={handleShuffle}
+              onShare={handleShare}
+            />
+          </div>
+        )}
 
-            {/* 疊字卡片 */}
-            <div className="animate-fadeIn">
-              <CentralCard
-                word={currentWord}
-                onShuffle={handleShuffle}
-                onShare={handleShare}
-              />
-            </div>
-
-            {/* 底部 - 固定在底部 */}
-            <footer className="fixed bottom-4 left-0 right-0 text-center z-20">
+        {/* 底部 - 非固定定位，隨頁面滾動 */}
+        <footer className="text-center pt-6 pb-2">
+          {!showLicense && (
+            <>
               <button
                 onClick={() => setShowLicense(true)}
-                className="text-black/80 text-[10px] tracking-wider mb-1 hover:text-black transition-colors cursor-pointer bg-transparent border-none underline-offset-2 hover:underline"
+                className="text-black/80 text-xs tracking-wider mb-1 hover:text-black transition-colors cursor-pointer bg-transparent border-none underline-offset-2 hover:underline"
               >
-                版權宣告頁面
+                版權宣告頁
               </button>
               <br />
-              <span className="text-gray-500 text-[10px] tracking-wider">
-                CREATED BY VIBE QUIRK LABS
-              </span>
-            </footer>
-          </>
-        )}
+            </>
+          )}
+          <span className="text-gray-500 text-[10px] tracking-wider">
+            CREATED BY VIBE QUIRK LABS
+          </span>
+        </footer>
       </div>
 
       {/* 全局動畫樣式 */}
