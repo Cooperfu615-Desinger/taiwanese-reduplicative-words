@@ -128,35 +128,6 @@ export function CentralCard({ word, onShuffle, onShare }) {
                                 {word.tailo}
                             </span>
                         </div>
-
-                        {/* 播放按鈕 - 在台羅正下方 */}
-                        {word.audioPath && (
-                            <button
-                                onClick={() => {
-                                    // 使用相對路徑（去掉開頭的 /），讓 Vite 的 base 設定自動處理
-                                    const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
-                                    const audio = new Audio(audioUrl);
-                                    audio.play().catch(err => console.log('Audio play error:', err));
-                                }}
-                                className="mt-3 p-2 text-white/60 hover:text-white/90 transition-colors rounded-full hover:bg-white/10"
-                                style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.3))' }}
-                                aria-label="播放發音"
-                            >
-                                <svg
-                                    className="w-5 h-5"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                                    <line x1="12" x2="12" y1="19" y2="22" />
-                                </svg>
-                            </button>
-                        )}
                     </div>
 
                     {/* 間隔 */}
@@ -178,10 +149,10 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     </div>
                 </div>
 
-                {/* Sentence Section - 移至橫線之上，移除麥克風 */}
-                <div className="shrink-0 mb-2">
+                {/* Sentence Section + 播放按鈕 */}
+                <div className="shrink-0 mb-2 flex items-center gap-3">
                     <p
-                        className="text-white/90 text-sm font-medium leading-relaxed"
+                        className="flex-1 text-white/90 text-sm font-medium leading-relaxed"
                         style={{
                             display: '-webkit-box',
                             WebkitLineClamp: 2,
@@ -192,6 +163,34 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     >
                         「{word.sentence}」
                     </p>
+
+                    {/* 播放按鈕 - 在例句右側，較大尺寸 */}
+                    {word.audioPath && (
+                        <button
+                            onClick={() => {
+                                const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
+                                const audio = new Audio(audioUrl);
+                                audio.play().catch(err => console.log('Audio play error:', err));
+                            }}
+                            className="shrink-0 p-2 text-white/70 hover:text-white transition-colors"
+                            style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}
+                            aria-label="播放發音"
+                        >
+                            <svg
+                                className="w-8 h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                <line x1="12" x2="12" y1="19" y2="22" />
+                            </svg>
+                        </button>
+                    )}
                 </div>
 
                 {/* Separator Line */}
