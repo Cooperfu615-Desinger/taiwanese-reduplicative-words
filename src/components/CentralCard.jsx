@@ -38,7 +38,7 @@ export function CentralCard({ word, onShuffle, onShare }) {
             "
             style={{
                 width: '350px',
-                height: '580px',
+                height: '680px',
                 backgroundColor: `${word.themeColor}CC`, // 80% 透明度
                 backgroundBlendMode: 'overlay',
                 boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
