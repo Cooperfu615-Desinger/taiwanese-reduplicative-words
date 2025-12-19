@@ -45,13 +45,33 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
             }}
         >
-            {/* 動態光點粒子層 */}
+            {/* 動態光點粒子層 - 20顆 */}
             <div className="absolute inset-0 overflow-hidden">
+                {/* 大型粒子 70px */}
                 <div className="particle particle-1" />
                 <div className="particle particle-2" />
                 <div className="particle particle-3" />
                 <div className="particle particle-4" />
+                {/* 中型粒子 50px */}
                 <div className="particle particle-5" />
+                <div className="particle particle-6" />
+                <div className="particle particle-7" />
+                <div className="particle particle-8" />
+                {/* 小型粒子 30px */}
+                <div className="particle particle-9" />
+                <div className="particle particle-10" />
+                <div className="particle particle-11" />
+                <div className="particle particle-12" />
+                {/* 微型粒子 20px */}
+                <div className="particle particle-13" />
+                <div className="particle particle-14" />
+                <div className="particle particle-15" />
+                <div className="particle particle-16" />
+                {/* 極小粒子 10px */}
+                <div className="particle particle-17" />
+                <div className="particle particle-18" />
+                <div className="particle particle-19" />
+                <div className="particle particle-20" />
             </div>
 
             {/* 內層微遮罩 - 模糊粒子增加朦朧感 */}

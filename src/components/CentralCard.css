@@ -1,6 +1,6 @@
 /**
  * CentralCard 動態光點粒子效果
- * 粒子在卡片內進行微小漂移與呼吸感縮放
+ * 20 顆粒子在卡片內進行微小漂移與呼吸感縮放
  */
 
 /* 粒子基礎樣式 */
@@ -12,57 +12,192 @@
     will-change: transform, opacity;
 }
 
-/* 粒子 1 - 大型漂浮光點 */
+/* ===== 大型粒子 (70px) ===== */
 .particle-1 {
-    width: 120px;
-    height: 120px;
-    top: 15%;
-    left: 10%;
-    opacity: 0.3;
-    animation: float1 8s ease-in-out infinite, pulse 4s ease-in-out infinite;
-}
-
-/* 粒子 2 - 中型光點 */
-.particle-2 {
-    width: 80px;
-    height: 80px;
-    top: 40%;
-    right: 5%;
-    opacity: 0.25;
-    animation: float2 10s ease-in-out infinite, pulse 5s ease-in-out infinite 1s;
-}
-
-/* 粒子 3 - 小型光點 */
-.particle-3 {
-    width: 50px;
-    height: 50px;
-    bottom: 30%;
-    left: 20%;
-    opacity: 0.35;
-    animation: float3 7s ease-in-out infinite, pulse 3s ease-in-out infinite 0.5s;
-}
-
-/* 粒子 4 - 微型光點 */
-.particle-4 {
-    width: 30px;
-    height: 30px;
-    top: 60%;
-    left: 60%;
-    opacity: 0.4;
-    animation: float4 9s ease-in-out infinite, pulse 6s ease-in-out infinite 2s;
-}
-
-/* 粒子 5 - 底部漂浮光點 */
-.particle-5 {
     width: 70px;
     height: 70px;
-    bottom: 15%;
-    right: 15%;
-    opacity: 0.2;
-    animation: float5 11s ease-in-out infinite, pulse 4.5s ease-in-out infinite 1.5s;
+    top: 10%;
+    left: 5%;
+    animation: float1 8s ease-in-out infinite, pulse 4s ease-in-out infinite;
+    --base-opacity: 0.25;
 }
 
-/* 漂浮動畫 - 粒子 1 */
+.particle-2 {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: 8%;
+    animation: float2 8.5s ease-in-out infinite, pulse 4.2s ease-in-out infinite 0.5s;
+    --base-opacity: 0.22;
+}
+
+.particle-3 {
+    width: 70px;
+    height: 70px;
+    bottom: 20%;
+    left: 15%;
+    animation: float3 7.8s ease-in-out infinite, pulse 4.5s ease-in-out infinite 1s;
+    --base-opacity: 0.2;
+}
+
+.particle-4 {
+    width: 70px;
+    height: 70px;
+    top: 30%;
+    left: 60%;
+    animation: float4 8.2s ease-in-out infinite, pulse 3.8s ease-in-out infinite 1.5s;
+    --base-opacity: 0.23;
+}
+
+/* ===== 中型粒子 (50px) ===== */
+.particle-5 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 20%;
+    animation: float5 10s ease-in-out infinite, pulse 5s ease-in-out infinite;
+    --base-opacity: 0.28;
+}
+
+.particle-6 {
+    width: 50px;
+    height: 50px;
+    top: 65%;
+    left: 10%;
+    animation: float1 10.5s ease-in-out infinite, pulse 5.2s ease-in-out infinite 0.8s;
+    --base-opacity: 0.25;
+}
+
+.particle-7 {
+    width: 50px;
+    height: 50px;
+    bottom: 35%;
+    right: 5%;
+    animation: float2 9.5s ease-in-out infinite, pulse 4.8s ease-in-out infinite 1.2s;
+    --base-opacity: 0.3;
+}
+
+.particle-8 {
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 35%;
+    animation: float3 10.2s ease-in-out infinite, pulse 5.5s ease-in-out infinite 2s;
+    --base-opacity: 0.22;
+}
+
+/* ===== 小型粒子 (30px) ===== */
+.particle-9 {
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 40%;
+    animation: float4 7s ease-in-out infinite, pulse 3.5s ease-in-out infinite;
+    --base-opacity: 0.35;
+}
+
+.particle-10 {
+    width: 30px;
+    height: 30px;
+    top: 55%;
+    right: 30%;
+    animation: float5 7.5s ease-in-out infinite, pulse 3.8s ease-in-out infinite 0.5s;
+    --base-opacity: 0.32;
+}
+
+.particle-11 {
+    width: 30px;
+    height: 30px;
+    bottom: 25%;
+    left: 50%;
+    animation: float1 6.8s ease-in-out infinite, pulse 4s ease-in-out infinite 1s;
+    --base-opacity: 0.38;
+}
+
+.particle-12 {
+    width: 30px;
+    height: 30px;
+    top: 75%;
+    right: 45%;
+    animation: float2 7.2s ease-in-out infinite, pulse 3.2s ease-in-out infinite 1.5s;
+    --base-opacity: 0.3;
+}
+
+/* ===== 微型粒子 (20px) ===== */
+.particle-13 {
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    left: 25%;
+    animation: float3 9s ease-in-out infinite, pulse 4.5s ease-in-out infinite;
+    --base-opacity: 0.4;
+}
+
+.particle-14 {
+    width: 20px;
+    height: 20px;
+    top: 40%;
+    right: 15%;
+    animation: float4 9.5s ease-in-out infinite, pulse 4.8s ease-in-out infinite 0.7s;
+    --base-opacity: 0.38;
+}
+
+.particle-15 {
+    width: 20px;
+    height: 20px;
+    bottom: 40%;
+    left: 70%;
+    animation: float5 8.5s ease-in-out infinite, pulse 4.2s ease-in-out infinite 1.3s;
+    --base-opacity: 0.42;
+}
+
+.particle-16 {
+    width: 20px;
+    height: 20px;
+    top: 80%;
+    left: 30%;
+    animation: float1 9.2s ease-in-out infinite, pulse 5s ease-in-out infinite 2s;
+    --base-opacity: 0.35;
+}
+
+/* ===== 極小粒子 (10px) ===== */
+.particle-17 {
+    width: 10px;
+    height: 10px;
+    top: 12%;
+    right: 35%;
+    animation: float2 11s ease-in-out infinite, pulse 5.5s ease-in-out infinite;
+    --base-opacity: 0.45;
+}
+
+.particle-18 {
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    left: 8%;
+    animation: float3 11.5s ease-in-out infinite, pulse 5.8s ease-in-out infinite 0.6s;
+    --base-opacity: 0.5;
+}
+
+.particle-19 {
+    width: 10px;
+    height: 10px;
+    bottom: 15%;
+    right: 25%;
+    animation: float4 10.5s ease-in-out infinite, pulse 5.2s ease-in-out infinite 1.2s;
+    --base-opacity: 0.48;
+}
+
+.particle-20 {
+    width: 10px;
+    height: 10px;
+    top: 60%;
+    left: 55%;
+    animation: float5 11.2s ease-in-out infinite, pulse 6s ease-in-out infinite 1.8s;
+    --base-opacity: 0.42;
+}
+
+/* ===== 漂浮動畫 ===== */
 @keyframes float1 {
 
     0%,
@@ -71,19 +206,18 @@
     }
 
     25% {
-        transform: translate(20px, -15px) scale(1.1);
+        transform: translate(15px, -10px) scale(1.1);
     }
 
     50% {
-        transform: translate(-10px, 10px) scale(0.95);
+        transform: translate(-8px, 8px) scale(0.95);
     }
 
     75% {
-        transform: translate(15px, 20px) scale(1.05);
+        transform: translate(10px, 15px) scale(1.05);
     }
 }
 
-/* 漂浮動畫 - 粒子 2 */
 @keyframes float2 {
 
     0%,
@@ -92,19 +226,18 @@
     }
 
     25% {
-        transform: translate(-25px, 10px) scale(1.15);
+        transform: translate(-18px, 8px) scale(1.12);
     }
 
     50% {
-        transform: translate(15px, -20px) scale(0.9);
+        transform: translate(12px, -15px) scale(0.9);
     }
 
     75% {
-        transform: translate(-10px, -10px) scale(1.1);
+        transform: translate(-8px, -8px) scale(1.08);
     }
 }
 
-/* 漂浮動畫 - 粒子 3 */
 @keyframes float3 {
 
     0%,
@@ -113,15 +246,14 @@
     }
 
     33% {
-        transform: translate(30px, 15px) scale(1.2);
+        transform: translate(20px, 12px) scale(1.15);
     }
 
     66% {
-        transform: translate(-20px, -10px) scale(0.85);
+        transform: translate(-15px, -8px) scale(0.88);
     }
 }
 
-/* 漂浮動畫 - 粒子 4 */
 @keyframes float4 {
 
     0%,
@@ -130,23 +262,22 @@
     }
 
     20% {
-        transform: translate(-15px, 25px) scale(1.3);
+        transform: translate(-12px, 18px) scale(1.2);
     }
 
     40% {
-        transform: translate(20px, -5px) scale(0.95);
+        transform: translate(15px, -5px) scale(0.92);
     }
 
     60% {
-        transform: translate(-10px, -20px) scale(1.1);
+        transform: translate(-8px, -15px) scale(1.08);
     }
 
     80% {
-        transform: translate(15px, 10px) scale(0.9);
+        transform: translate(10px, 8px) scale(0.95);
     }
 }
 
-/* 漂浮動畫 - 粒子 5 */
 @keyframes float5 {
 
     0%,
@@ -155,11 +286,11 @@
     }
 
     30% {
-        transform: translate(-20px, -25px) scale(1.15);
+        transform: translate(-15px, -18px) scale(1.1);
     }
 
     60% {
-        transform: translate(25px, 15px) scale(0.9);
+        transform: translate(18px, 10px) scale(0.92);
     }
 }
 
@@ -172,27 +303,6 @@
     }
 
     50% {
-        opacity: calc(var(--base-opacity, 0.3) * 1.5);
+        opacity: calc(var(--base-opacity, 0.3) * 1.6);
     }
-}
-
-/* 為每個粒子設定基礎透明度變數 */
-.particle-1 {
-    --base-opacity: 0.3;
-}
-
-.particle-2 {
-    --base-opacity: 0.25;
-}
-
-.particle-3 {
-    --base-opacity: 0.35;
-}
-
-.particle-4 {
-    --base-opacity: 0.4;
-}
-
-.particle-5 {
-    --base-opacity: 0.2;
 }
