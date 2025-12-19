@@ -1,63 +1,97 @@
+/**
+ * CentralCard - 固定尺寸版本
+ * 確保 3 字 (ABB/AAB) 與 4 字 (AABB/ABAB) 切換時視覺穩定
+ */
 export function CentralCard({ word, onShuffle, onShare }) {
+    // 根據字數調整字間距，確保視覺重心一致
+    const charCount = [...word.hanzi].length;
+    const letterSpacing = charCount === 3 ? '0.15em' : '0.05em';
+
     return (
         <div
-            className="w-full max-w-[360px] rounded-3xl p-6 flex flex-col backdrop-blur-md"
+            className="
+                w-full max-w-[360px] 
+                min-h-[580px] max-h-[85vh]
+                aspect-[9/16]
+                rounded-3xl p-6 
+                flex flex-col
+                backdrop-blur-md
+            "
             style={{
                 backgroundColor: `${word.themeColor}80`,
             }}
         >
-            {/* Header Row - Type & Category */}
-            <div className="flex justify-between items-start mb-6">
+            {/* Header Row - Type & Category (固定在頂部) */}
+            <div className="flex justify-between items-start shrink-0">
                 <div className="text-white/80 text-sm">
                     <span className="text-white/50 text-xs">形式</span>{' '}
                     <span className="font-medium">{word.type}</span>
                 </div>
                 <div className="text-white/80 text-sm text-right">
                     <span className="text-white/50 text-xs">類別</span>{' '}
-                    <span className="font-medium">{word.category}</span>
+                    <span className="font-medium">{word.category || '—'}</span>
                 </div>
             </div>
 
-            {/* Main Content Area - Vertical Text */}
-            <div className="flex items-start justify-center gap-4 py-8 min-h-[320px]">
-                {/* Main Hanzi - Vertical */}
-                <h1
-                    className="text-white font-semibold leading-[0.9] select-none"
-                    style={{
-                        writingMode: 'vertical-rl',
-                        textOrientation: 'upright',
-                        fontSize: 'clamp(4.5rem, 16vw, 6rem)',
-                        letterSpacing: '-0.02em',
-                    }}
+            {/* Main Content Area - 使用 flex-grow 填滿中間空間 */}
+            <div className="flex-1 flex items-center justify-center gap-4 py-6">
+                {/* 固定高度的漢字容器 */}
+                <div
+                    className="flex items-center justify-center"
+                    style={{ height: '320px' }}
                 >
-                    {word.hanzi}
-                </h1>
+                    {/* Main Hanzi - Vertical */}
+                    <h1
+                        className="text-white font-semibold leading-[0.9] select-none"
+                        style={{
+                            writingMode: 'vertical-rl',
+                            textOrientation: 'upright',
+                            fontSize: 'clamp(4rem, 14vw, 5.5rem)',
+                            letterSpacing: letterSpacing,
+                        }}
+                    >
+                        {word.hanzi}
+                    </h1>
+                </div>
 
-                {/* Tailo - Vertical */}
-                <span
-                    className="text-white/70 text-sm font-medium tracking-wide whitespace-nowrap"
-                    style={{
-                        writingMode: 'vertical-rl',
-                    }}
-                >
-                    {word.tailo}
-                </span>
+                {/* Side Info - Vertical */}
+                <div className="flex flex-col items-start gap-3" style={{ height: '320px' }}>
+                    {/* Tailo - Vertical */}
+                    <span
+                        className="text-white/70 text-sm font-medium tracking-wide whitespace-nowrap"
+                        style={{
+                            writingMode: 'vertical-rl',
+                        }}
+                    >
+                        {word.tailo}
+                    </span>
 
-                {/* Meaning - Vertical with prefix */}
-                <span
-                    className="text-white/60 text-sm font-medium leading-relaxed"
-                    style={{
-                        writingMode: 'vertical-rl',
-                    }}
-                >
-                    釋義・{word.meaning}
-                </span>
+                    {/* Meaning - Vertical with prefix */}
+                    <span
+                        className="text-white/60 text-sm font-medium leading-relaxed flex-1"
+                        style={{
+                            writingMode: 'vertical-rl',
+                            maxHeight: '200px',
+                            overflow: 'hidden',
+                        }}
+                    >
+                        釋義・{word.meaning}
+                    </span>
+                </div>
             </div>
 
-            {/* Sentence Section */}
-            <div className="border-t border-white/20 pt-4 mt-2">
+            {/* Sentence Section (固定在底部區域) */}
+            <div className="shrink-0 border-t border-white/20 pt-4">
                 <div className="flex items-center justify-between gap-3">
-                    <p className="text-white/80 text-sm font-medium leading-relaxed flex-1">
+                    <p
+                        className="text-white/80 text-sm font-medium leading-relaxed flex-1"
+                        style={{
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            overflow: 'hidden',
+                        }}
+                    >
                         「{word.sentence}」
                     </p>
                     {/* Mic Icon */}
@@ -79,8 +113,8 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 </div>
             </div>
 
-            {/* Action Bar - Two Buttons */}
-            <div className="flex gap-3 mt-6">
+            {/* Action Bar - 固定在最底部 */}
+            <div className="shrink-0 flex gap-3 mt-4">
                 {/* Share Button */}
                 <button
                     onClick={onShare}
