@@ -306,3 +306,10 @@
         opacity: calc(var(--base-opacity, 0.3) * 1.6);
     }
 }
+
+/* 轉圖時粒子靜止 */
+.particle-static .particle {
+    animation: none !important;
+    transform: none !important;
+    opacity: var(--base-opacity, 0.3) !important;
+}

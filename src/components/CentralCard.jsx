@@ -1,13 +1,19 @@
 /**
- * CentralCard - 高質感通透版本 + 動態光點粒子
+ * CentralCard - 高質感通透版本 + 動態光點粒子 + 分享轉圖功能
  * 1. 固定卡片尺寸確保視覺穩定
  * 2. 降低背景透明度讓流動光影透出
  * 3. 動態光點粒子增加氛圍感
  * 4. 主題色陰影產生發光效果
+ * 5. 推廣台語按鈕觸發轉圖下載
  */
+import { useRef, useState } from 'react';
+import html2canvas from 'html2canvas';
 import './CentralCard.css';
 
-export function CentralCard({ word, onShuffle, onShare }) {
+export function CentralCard({ word, onShuffle }) {
+    const cardRef = useRef(null);
+    const [isCapturing, setIsCapturing] = useState(false);
+
     // 根據字數調整字間距，確保視覺重心一致
     const charCount = [...word.hanzi].length;
     const letterSpacing = charCount === 3 ? '0.15em' : '0.05em';
@@ -29,23 +35,51 @@ export function CentralCard({ word, onShuffle, onShare }) {
     const rgb = hexToRgb(word.themeColor);
     const themeColorShadow = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.4)`;
 
+    // 處理推廣台語按鈕點擊 - 轉圖並下載
+    const handleShare = async () => {
+        if (!cardRef.current || isCapturing) return;
+
+        setIsCapturing(true);
+
+        try {
+            // 等待 DOM 更新（切換為分享模式）
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const canvas = await html2canvas(cardRef.current, {
+                scale: 2, // 2x 解析度確保清晰
+                useCORS: true,
+                backgroundColor: null, // 透明背景，使用卡片自身背景
+                logging: false,
+            });
+
+            // 產生下載連結
+            const dataUrl = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = `taiwanesetaigi-${word.hanzi}.png`;
+            link.href = dataUrl;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (error) {
+            console.error('轉圖失敗:', error);
+        } finally {
+            setIsCapturing(false);
+        }
+    };
+
     return (
         <div
-            className="
-                relative
-                rounded-3xl
-                overflow-hidden
-            "
+            ref={cardRef}
+            className="relative rounded-3xl overflow-hidden"
             style={{
                 width: '350px',
                 height: '620px',
-                backgroundColor: `${word.themeColor}CC`, // 80% 透明度
-                backgroundBlendMode: 'overlay',
-                boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
+                backgroundColor: word.themeColor, // 轉圖時使用實色背景
+                boxShadow: isCapturing ? 'none' : `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
             }}
         >
-            {/* 動態光點粒子層 - 20顆 */}
-            <div className="absolute inset-0 overflow-hidden">
+            {/* 動態光點粒子層 - 20顆 (轉圖時靜止) */}
+            <div className={`absolute inset-0 overflow-hidden ${isCapturing ? 'particle-static' : ''}`}>
                 {/* 大型粒子 70px */}
                 <div className="particle particle-1" />
                 <div className="particle particle-2" />
@@ -78,7 +112,6 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 className="absolute inset-0 z-[1]"
                 style={{
                     background: 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.03) 100%)',
-                    backdropFilter: 'blur(2px)',
                 }}
             />
 
@@ -165,87 +198,99 @@ export function CentralCard({ word, onShuffle, onShare }) {
                         「{word.sentence}」
                     </p>
 
-                    {/* 播放按鈕區域 - 固定寬度 */}
-                    <div className="shrink-0 w-12 h-12 flex items-center justify-center">
-                        {word.audioPath && (
-                            <button
-                                onClick={() => {
-                                    const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
-                                    const audio = new Audio(audioUrl);
-                                    audio.play().catch(err => console.log('Audio play error:', err));
-                                }}
-                                className="shrink-0 p-2 text-white/70 hover:text-white transition-colors"
-                                style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}
-                                aria-label="播放發音"
-                            >
-                                <svg
-                                    className="w-8 h-8"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
+                    {/* 播放按鈕區域 - 固定寬度 (轉圖時隱藏) */}
+                    {!isCapturing && (
+                        <div className="shrink-0 w-12 h-12 flex items-center justify-center">
+                            {word.audioPath && (
+                                <button
+                                    onClick={() => {
+                                        const audioUrl = import.meta.env.BASE_URL + word.audioPath.replace(/^\//, '');
+                                        const audio = new Audio(audioUrl);
+                                        audio.play().catch(err => console.log('Audio play error:', err));
+                                    }}
+                                    className="shrink-0 p-2 text-white/70 hover:text-white transition-colors"
+                                    style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}
+                                    aria-label="播放發音"
                                 >
-                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                                    <line x1="12" x2="12" y1="19" y2="22" />
-                                </svg>
-                            </button>
-                        )}
-                    </div>
+                                    <svg
+                                        className="w-8 h-8"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="1.5"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    >
+                                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                        <line x1="12" x2="12" y1="19" y2="22" />
+                                    </svg>
+                                </button>
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 {/* Separator Line */}
                 <div className="shrink-0 w-full h-px bg-white/30" style={{ marginBottom: '13px' }} />
 
-                {/* Action Bar - 固定在最底部 */}
-                <div className="shrink-0 flex gap-3">
-                    {/* Share Button */}
-                    <button
-                        onClick={onShare}
-                        className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-white/25 hover:bg-white/35 border border-white/30 rounded-full text-white text-sm font-medium transition-all duration-200"
-                        style={{ textShadow }}
-                    >
-                        <svg
-                            className="w-4 h-4"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
+                {/* 底部區域 - 根據 isCapturing 切換內容 */}
+                {isCapturing ? (
+                    // 分享模式：顯示品牌足跡
+                    <div className="shrink-0 text-center py-3">
+                        <span className="text-white/60 text-xs tracking-widest">
+                            CREATED BY VIBE QUIRK LABS
+                        </span>
+                    </div>
+                ) : (
+                    // 正常模式：顯示按鈕
+                    <div className="shrink-0 flex gap-3">
+                        {/* Share Button */}
+                        <button
+                            onClick={handleShare}
+                            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-white/25 hover:bg-white/35 border border-white/30 rounded-full text-white text-sm font-medium transition-all duration-200"
+                            style={{ textShadow }}
                         >
-                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-                            <polyline points="16,6 12,2 8,6" />
-                            <line x1="12" x2="12" y1="2" y2="15" />
-                        </svg>
-                        推廣台語
-                    </button>
+                            <svg
+                                className="w-4 h-4"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                <polyline points="16,6 12,2 8,6" />
+                                <line x1="12" x2="12" y1="2" y2="15" />
+                            </svg>
+                            推廣台語
+                        </button>
 
-                    {/* Shuffle Button */}
-                    <button
-                        onClick={onShuffle}
-                        className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-white/25 hover:bg-white/35 border border-white/30 rounded-full text-white text-sm font-medium transition-all duration-200"
-                        style={{ textShadow }}
-                    >
-                        <svg
-                            className="w-4 h-4"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
+                        {/* Shuffle Button */}
+                        <button
+                            onClick={onShuffle}
+                            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-white/25 hover:bg-white/35 border border-white/30 rounded-full text-white text-sm font-medium transition-all duration-200"
+                            style={{ textShadow }}
                         >
-                            <path d="M21 2v6h-6" />
-                            <path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
-                            <path d="M3 22v-6h6" />
-                            <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
-                        </svg>
-                        換一句
-                    </button>
-                </div>
+                            <svg
+                                className="w-4 h-4"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M21 2v6h-6" />
+                                <path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
+                                <path d="M3 22v-6h6" />
+                                <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
+                            </svg>
+                            換一句
+                        </button>
+                    </div>
+                )}
             </div>
         </div>
     );

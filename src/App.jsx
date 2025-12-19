@@ -65,7 +65,6 @@ function App() {
             <CentralCard
               word={currentWord}
               onShuffle={handleShuffle}
-              onShare={handleShare}
             />
           </div>
         )}
