@@ -1,18 +1,20 @@
 /**
- * CentralCard - 高質感通透版本
+ * CentralCard - 高質感通透版本 + 動態光點粒子
  * 1. 固定卡片尺寸確保視覺穩定
  * 2. 降低背景透明度讓流動光影透出
- * 3. 混合模式增加層次感
+ * 3. 動態光點粒子增加氛圍感
  * 4. 主題色陰影產生發光效果
  */
+import './CentralCard.css';
+
 export function CentralCard({ word, onShuffle, onShare }) {
     // 根據字數調整字間距，確保視覺重心一致
     const charCount = [...word.hanzi].length;
     const letterSpacing = charCount === 3 ? '0.15em' : '0.05em';
 
-    // 文字陰影樣式
-    const textShadow = '0 2px 4px rgba(0,0,0,0.3)';
-    const textShadowStrong = '0 2px 8px rgba(0,0,0,0.5)';
+    // 文字陰影樣式（增強可讀性）
+    const textShadow = '0 2px 4px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.2)';
+    const textShadowStrong = '0 3px 10px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.3)';
 
     // 從 themeColor 提取 RGB 用於陰影
     const hexToRgb = (hex) => {
@@ -36,7 +38,6 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 aspect-[9/16]
                 rounded-3xl
                 overflow-hidden
-                backdrop-blur-md
             "
             style={{
                 backgroundColor: `${word.themeColor}CC`, // 80% 透明度
@@ -44,12 +45,21 @@ export function CentralCard({ word, onShuffle, onShare }) {
                 boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
             }}
         >
-            {/* 內層微遮罩 - 輕微增強對比但保持通透 */}
+            {/* 動態光點粒子層 */}
+            <div className="absolute inset-0 overflow-hidden">
+                <div className="particle particle-1" />
+                <div className="particle particle-2" />
+                <div className="particle particle-3" />
+                <div className="particle particle-4" />
+                <div className="particle particle-5" />
+            </div>
+
+            {/* 內層微遮罩 - 模糊粒子增加朦朧感 */}
             <div
-                className="absolute inset-0"
+                className="absolute inset-0 z-[1]"
                 style={{
-                    background: 'linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.05) 100%)',
-                    backdropFilter: 'blur(1px)',
+                    background: 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.03) 100%)',
+                    backdropFilter: 'blur(2px)',
                 }}
             />
 
@@ -100,15 +110,15 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     {/* 間隔 */}
                     <div className="w-4" />
 
-                    {/* 釋義 - 獨立一組（粗體） */}
+                    {/* 釋義 - 獨立一組（粗體 + 增強陰影） */}
                     <div className="flex items-start" style={{ height: '320px' }}>
                         <span
-                            className="text-white/80 text-sm font-bold leading-relaxed"
+                            className="text-white/85 text-sm font-bold leading-relaxed"
                             style={{
                                 writingMode: 'vertical-rl',
                                 maxHeight: '320px',
                                 overflow: 'hidden',
-                                textShadow,
+                                textShadow: textShadowStrong,
                             }}
                         >
                             釋義・{word.meaning}
@@ -116,43 +126,27 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     </div>
                 </div>
 
-                {/* Sentence Section (固定在底部區域) */}
-                <div className="shrink-0 border-t border-white/30 pt-4">
-                    <div className="flex items-center justify-between gap-3">
-                        <p
-                            className="text-white/90 text-sm font-medium leading-relaxed flex-1"
-                            style={{
-                                display: '-webkit-box',
-                                WebkitLineClamp: 2,
-                                WebkitBoxOrient: 'vertical',
-                                overflow: 'hidden',
-                                textShadow,
-                            }}
-                        >
-                            「{word.sentence}」
-                        </p>
-                        {/* Mic Icon */}
-                        <button className="p-2 text-white/60 hover:text-white/90 transition-colors shrink-0">
-                            <svg
-                                className="w-5 h-5"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.3))' }}
-                            >
-                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                                <line x1="12" x2="12" y1="19" y2="22" />
-                            </svg>
-                        </button>
-                    </div>
+                {/* Sentence Section - 移至橫線之上，移除麥克風 */}
+                <div className="shrink-0 mb-2">
+                    <p
+                        className="text-white/90 text-sm font-medium leading-relaxed"
+                        style={{
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            overflow: 'hidden',
+                            textShadow,
+                        }}
+                    >
+                        「{word.sentence}」
+                    </p>
                 </div>
 
+                {/* Separator Line */}
+                <div className="shrink-0 w-full h-px bg-white/30 mb-4" />
+
                 {/* Action Bar - 固定在最底部 */}
-                <div className="shrink-0 flex gap-3 mt-4">
+                <div className="shrink-0 flex gap-3">
                     {/* Share Button */}
                     <button
                         onClick={onShare}
