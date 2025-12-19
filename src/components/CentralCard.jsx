@@ -38,7 +38,7 @@ export function CentralCard({ word, onShuffle, onShare }) {
             "
             style={{
                 width: '350px',
-                height: '680px',
+                height: '620px',
                 backgroundColor: `${word.themeColor}CC`, // 80% 透明度
                 backgroundBlendMode: 'overlay',
                 boxShadow: `0 20px 50px ${themeColorShadow}, 0 10px 30px rgba(0,0,0,0.2)`,
@@ -96,19 +96,19 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     </div>
                 </div>
 
-                {/* Main Content Area - 所有元素置頂對齊 */}
-                <div className="flex-1 flex items-start justify-center gap-2 py-6">
-                    {/* 漢字 + 台羅 + 播放按鈕 組 */}
-                    <div className="flex flex-col items-center" style={{ height: '320px' }}>
+                {/* Main Content Area - 漢字台羅左偏20px */}
+                <div className="flex-1 flex items-start justify-center gap-2 py-6" style={{ marginLeft: '-20px' }}>
+                    {/* 漢字 + 台羅 組 */}
+                    <div className="flex flex-col items-center" style={{ height: '400px' }}>
                         {/* 漢字 + 台羅 橫向排列 */}
                         <div className="flex items-start gap-1 flex-1">
                             {/* Main Hanzi - Vertical */}
                             <h1
-                                className="text-white font-semibold leading-[0.9] select-none"
+                                className="text-white font-semibold leading-[0.85] select-none"
                                 style={{
                                     writingMode: 'vertical-rl',
                                     textOrientation: 'upright',
-                                    fontSize: '5rem',
+                                    fontSize: '90px',
                                     letterSpacing: letterSpacing,
                                     textShadow: textShadowStrong,
                                 }}
@@ -118,9 +118,10 @@ export function CentralCard({ word, onShuffle, onShare }) {
 
                             {/* Tailo - Vertical (緊跟漢字) */}
                             <span
-                                className="text-white/80 text-sm font-medium tracking-wide whitespace-nowrap"
+                                className="text-white/80 font-medium tracking-wide whitespace-nowrap"
                                 style={{
                                     writingMode: 'vertical-rl',
+                                    fontSize: '15px',
                                     textShadow,
                                 }}
                             >
@@ -133,12 +134,13 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     <div className="w-4" />
 
                     {/* 釋義 - 獨立一組（粗體 + 增強陰影） */}
-                    <div className="flex items-start" style={{ height: '320px' }}>
+                    <div className="flex items-start" style={{ height: '400px' }}>
                         <span
-                            className="text-white/85 text-sm font-bold leading-relaxed"
+                            className="text-white/85 font-bold leading-relaxed"
                             style={{
                                 writingMode: 'vertical-rl',
-                                maxHeight: '320px',
+                                fontSize: '18px',
+                                maxHeight: '400px',
                                 overflow: 'hidden',
                                 textShadow: textShadowStrong,
                             }}
