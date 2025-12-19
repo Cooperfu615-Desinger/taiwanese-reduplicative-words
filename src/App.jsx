@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import { CentralCard } from './components/CentralCard';
 import { AmbientBackground } from './components/AmbientBackground';
+import { LicensePage } from './components/LicensePage';
 import wordsData from './data/data.json';
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
     const randomIndex = Math.floor(Math.random() * wordsData.words.length);
     return wordsData.words[randomIndex];
   });
+
+  // 頁面切換狀態
+  const [showLicense, setShowLicense] = useState(false);
 
   const handleShuffle = useCallback(() => {
     let newIndex;
@@ -44,27 +48,62 @@ function App() {
       {/* Main Content */}
       <div className="min-h-screen w-full font-sans relative flex flex-col items-center justify-center px-4 py-8">
         {/* Title at top center */}
-        <h1 className="fixed top-6 left-0 right-0 text-center text-text text-lg font-semibold tracking-[0.3em]">
+        <h1 className="fixed top-6 left-0 right-0 text-center text-text text-lg font-semibold tracking-[0.3em] z-20">
           台語疊字聲韻
         </h1>
 
-        {/* Central Card */}
-        <CentralCard
-          word={currentWord}
-          onShuffle={handleShuffle}
-          onShare={handleShare}
-        />
+        {/* 條件渲染：卡片或版權頁面 */}
+        {showLicense ? (
+          // 版權宣告頁面
+          <div className="w-full pt-16 pb-20 animate-fadeIn">
+            <LicensePage onClose={() => setShowLicense(false)} />
+          </div>
+        ) : (
+          // 疊字卡片（淡入效果）
+          <div className="animate-fadeIn">
+            <CentralCard
+              word={currentWord}
+              onShuffle={handleShuffle}
+              onShare={handleShare}
+            />
+          </div>
+        )}
 
         {/* Footer at bottom */}
-        <footer className="fixed bottom-4 left-0 right-0 text-center">
-          <p className="text-black text-[10px] tracking-wider mb-1">
-            資料來源：教育部臺灣台語常用詞辭典
-          </p>
+        <footer className="fixed bottom-4 left-0 right-0 text-center z-20">
+          {!showLicense && (
+            <>
+              <button
+                onClick={() => setShowLicense(true)}
+                className="text-black/80 text-[10px] tracking-wider mb-1 hover:text-black transition-colors cursor-pointer bg-transparent border-none underline-offset-2 hover:underline"
+              >
+                版權宣告頁面
+              </button>
+              <br />
+            </>
+          )}
           <span className="text-gray-500 text-[10px] tracking-wider">
             CREATED BY VIBE QUIRK LABS
           </span>
         </footer>
       </div>
+
+      {/* 全局動畫樣式 */}
+      <style>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(8px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.4s ease-out forwards;
+        }
+      `}</style>
     </>
   );
 }

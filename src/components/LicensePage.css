@@ -1,0 +1,227 @@
+/**
+ * LicensePage 樣式
+ * 簡約優雅的版權宣告頁面
+ */
+
+.license-page {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* 淡入動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 頂部導覽 */
+.license-header {
+    position: relative;
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.license-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 0.25rem;
+    letter-spacing: 0.05em;
+}
+
+.license-subtitle {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+/* 關閉按鈕 */
+.close-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.close-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #1a1a1a;
+}
+
+.close-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* 內容區域 */
+.license-content {
+    padding-bottom: 3rem;
+}
+
+/* 區塊樣式 */
+.license-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2d4739;
+    display: inline-block;
+}
+
+.section-subtitle-text {
+    font-size: 0.875rem;
+    color: #888;
+    margin: -0.5rem 0 0.75rem;
+    font-style: italic;
+}
+
+.section-text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0 0 1rem;
+}
+
+.section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-list li {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: #333;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+}
+
+.section-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0.5rem;
+    color: #2d4739;
+    font-weight: bold;
+}
+
+.section-list li strong {
+    color: #1a1a1a;
+}
+
+/* 連結樣式 */
+.text-link {
+    color: #1a5f7a;
+    text-decoration: none;
+    border-bottom: 1px dashed #1a5f7a;
+    transition: all 0.2s ease;
+}
+
+.text-link:hover {
+    color: #0d3d4d;
+    border-bottom-style: solid;
+}
+
+/* 聯繫郵件 */
+.contact-email {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+    border-radius: 0.75rem;
+    border-left: 4px solid #2d4739;
+}
+
+.email-link {
+    color: #1a5f7a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.email-link:hover {
+    color: #0d3d4d;
+    text-decoration: underline;
+}
+
+/* 返回按鈕區 */
+.back-button-container {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(135deg, #2d4739 0%, #1e3a2f 100%);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(45, 71, 57, 0.3);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 71, 57, 0.4);
+}
+
+/* 響應式設計 */
+@media (max-width: 640px) {
+    .license-page {
+        padding: 0 1rem;
+    }
+
+    .license-title {
+        font-size: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-text,
+    .section-list li {
+        font-size: 0.875rem;
+    }
+
+    .contact-email {
+        font-size: 0.9375rem;
+        padding: 0.875rem;
+    }
+}
