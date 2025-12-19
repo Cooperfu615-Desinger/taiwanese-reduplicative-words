@@ -7,7 +7,7 @@
  * 5. 推廣台語按鈕觸發轉圖下載
  */
 import { useRef, useState } from 'react';
-import html2canvas from 'html2canvas';
+import { toPng } from 'html-to-image';
 import './CentralCard.css';
 
 export function CentralCard({ word, onShuffle }) {
@@ -45,15 +45,12 @@ export function CentralCard({ word, onShuffle }) {
             // 等待 DOM 更新（切換為分享模式）
             await new Promise(resolve => setTimeout(resolve, 100));
 
-            const canvas = await html2canvas(cardRef.current, {
-                scale: 2, // 2x 解析度確保清晰
-                useCORS: true,
-                backgroundColor: null, // 透明背景，使用卡片自身背景
-                logging: false,
+            const dataUrl = await toPng(cardRef.current, {
+                pixelRatio: 2, // 2x 解析度確保清晰
+                cacheBust: true,
             });
 
             // 產生下載連結
-            const dataUrl = canvas.toDataURL('image/png');
             const link = document.createElement('a');
             link.download = `taiwanesetaigi-${word.hanzi}.png`;
             link.href = dataUrl;
