@@ -49,13 +49,10 @@ export function CentralCard({ word, onShuffle, onShare }) {
                     </div>
                 </div>
 
-                {/* Main Content Area - 使用 flex-grow 填滿中間空間 */}
-                <div className="flex-1 flex items-center justify-center gap-4 py-6">
-                    {/* 固定高度的漢字容器 */}
-                    <div
-                        className="flex items-center justify-center"
-                        style={{ height: '320px' }}
-                    >
+                {/* Main Content Area - 所有元素置頂對齊 */}
+                <div className="flex-1 flex items-start justify-center gap-2 py-6">
+                    {/* 漢字 + 台羅 組（靠近） */}
+                    <div className="flex items-start gap-1" style={{ height: '320px' }}>
                         {/* Main Hanzi - Vertical */}
                         <h1
                             className="text-white font-semibold leading-[0.9] select-none"
@@ -69,11 +66,8 @@ export function CentralCard({ word, onShuffle, onShare }) {
                         >
                             {word.hanzi}
                         </h1>
-                    </div>
 
-                    {/* Side Info - Vertical */}
-                    <div className="flex flex-col items-start gap-3" style={{ height: '320px' }}>
-                        {/* Tailo - Vertical */}
+                        {/* Tailo - Vertical (緊跟漢字) */}
                         <span
                             className="text-white/80 text-sm font-medium tracking-wide whitespace-nowrap"
                             style={{
@@ -83,13 +77,18 @@ export function CentralCard({ word, onShuffle, onShare }) {
                         >
                             {word.tailo}
                         </span>
+                    </div>
 
-                        {/* Meaning - Vertical with prefix */}
+                    {/* 間隔 */}
+                    <div className="w-4" />
+
+                    {/* 釋義 - 獨立一組（粗體） */}
+                    <div className="flex items-start" style={{ height: '320px' }}>
                         <span
-                            className="text-white/70 text-sm font-medium leading-relaxed flex-1"
+                            className="text-white/80 text-sm font-bold leading-relaxed"
                             style={{
                                 writingMode: 'vertical-rl',
-                                maxHeight: '200px',
+                                maxHeight: '320px',
                                 overflow: 'hidden',
                                 textShadow,
                             }}
